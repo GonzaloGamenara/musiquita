@@ -660,30 +660,171 @@ Cheetah Girls|Strut
 Vanessa Hudgens|Say OK
 Hilary Duff|Come Clean
 Hilary Duff|So Yesterday
+Ashlee Simpson|Pieces of Me
+Lindsay Lohan|Rumors
+Jesse McCartney|Beautiful Soul
+Sean Kingston|Beautiful Girls
+Tokio Hotel|Monsoon
+Tokio Hotel|Durch den Monsun
+Kidz Bop Kids|Shake It Off
+Jesse & Joy|Espacio Sideral
+Jesse & Joy|Corre
 Tan Biónica|Ciudad Mágica
+Chiquititas|Chiquititas
 `);
 
   add('cine', '🎬', 'Cine, series y Disney', `
+Idina Menzel|Let It Go
+Auliʻi Cravalho|How Far I'll Go
+Randy Newman|You've Got a Friend in Me
+Elton John|Can You Feel the Love Tonight
+Elton John|Circle of Life
+Phil Collins|You'll Be in My Heart
+Phil Collins|Two Worlds
+Celine Dion|My Heart Will Go On
+Celine Dion|Beauty and the Beast
+Whitney Houston|I Will Always Love You
+Survivor|Eye of the Tiger
+Ray Parker Jr.|Ghostbusters
 Lady Gaga|Shallow
+Bryan Adams|(Everything I Do) I Do It for You
+Kenny Loggins|Danger Zone
+Berlin|Take My Breath Away
 Adele|Skyfall
 Billie Eilish|No Time to Die
+Wiz Khalifa|See You Again
 Dua Lipa|Dance The Night
+Miguel|Remember Me
+Encanto Cast|We Don't Talk About Bruno
+Jon Batiste|It's All Right
+Sebastian Yatra|Dos Oruguitas
+Daniel Powter|Bad Day
+Louis Armstrong|What a Wonderful World
 Aerosmith|I Don't Want to Miss a Thing
+Vanessa Carlton|A Thousand Miles
 Shakira|Try Everything
 Sia|Never Give Up
+Pharrell Williams|Happy
 Justin Timberlake|Can't Stop the Feeling!
 Ariana Grande|Beauty and the Beast
+Kristen Bell|For the First Time in Forever
+Jonathan Groff|Reindeer(s) Are Better Than People
+Tim Curry|Sweet Transvestite
+Bill Medley|(I've Had) The Time of My Life
+Starship|Nothing's Gonna Stop Us Now
+Hans Zimmer|Time
+Hans Zimmer|He's a Pirate
+John Williams|Imperial March
+John Williams|Hedwig's Theme
+Ennio Morricone|The Good, the Bad and the Ugly
+The Black Eyed Peas|Pump It
 Eminem|Lose Yourself
 Queen|Bohemian Rhapsody
+Los Del Río|Macarena
+Gloria Gaynor|I Will Survive
+Bee Gees|Stayin' Alive
 `);
 
   add('retro', '🕺', 'Hits de los 80 y 90', `
+Michael Jackson|Billie Jean
+Michael Jackson|Thriller
+Michael Jackson|Beat It
+Michael Jackson|Smooth Criminal
+Michael Jackson|Bad
+Michael Jackson|Don't Stop 'Til You Get Enough
+Michael Jackson|Black or White
+Madonna|Like a Virgin
+Madonna|La Isla Bonita
+Madonna|Vogue
+Madonna|Hung Up
+Whitney Houston|I Wanna Dance with Somebody (Who Loves Me)
+George Michael|Careless Whisper
+George Michael|Faith
+Cyndi Lauper|Girls Just Want to Have Fun
+Cyndi Lauper|Time After Time
+a-ha|Take On Me
+Backstreet Boys|I Want It That Way
+Backstreet Boys|Everybody (Backstreet's Back)
+Backstreet Boys|As Long as You Love Me
+*NSYNC|Bye Bye Bye
+*NSYNC|It's Gonna Be Me
+Spice Girls|Wannabe
+Spice Girls|Spice Up Your Life
+Cher|Believe
+Destiny's Child|Survivor
+Destiny's Child|Say My Name
+TLC|No Scrubs
+TLC|Waterfalls
+Ace of Base|The Sign
+Haddaway|What Is Love
+Snap!|Rhythm Is a Dancer
+Vengaboys|Boom, Boom, Boom, Boom!!
+Lou Bega|Mambo No. 5 (A Little Bit of...)
+Toto|Africa
+Journey|Don't Stop Believin'
+Billy Joel|Piano Man
+Kool & The Gang|Celebration
+Earth, Wind & Fire|September
+ABBA|Dancing Queen
+ABBA|Mamma Mia
+ABBA|Gimme! Gimme! Gimme!
+Donna Summer|I Feel Love
+Village People|Y.M.C.A.
+Rick Astley|Never Gonna Give You Up
+Prince|Purple Rain
+Wham!|Last Christmas
+Bonnie Tyler|Total Eclipse of the Heart
+Europe|The Final Countdown
+Bee Gees|Night Fever
+Eurythmics|Sweet Dreams (Are Made of This)
+Depeche Mode|Enjoy the Silence
+The Cure|Friday I'm in Love
+Duran Duran|Hungry Like the Wolf
+Simple Minds|Don't You (Forget About Me)
+Tears for Fears|Everybody Wants to Rule the World
+Dexys Midnight Runners|Come On Eileen
+Roxette|It Must Have Been Love
+Roxette|The Look
+Sinéad O'Connor|Nothing Compares 2 U
+Alanis Morissette|Ironic
 Oasis|Wonderwall
+Blur|Song 2
+Smash Mouth|All Star
+Third Eye Blind|Semi-Charmed Life
 Bon Jovi|Livin' on a Prayer
 Guns N' Roses|Sweet Child O' Mine
 `);
 
   add('folklore', '🪕', 'Folklore y tango', `
+Mercedes Sosa|Gracias a la Vida
+Mercedes Sosa|Solo le Pido a Dios
+Mercedes Sosa|Todo Cambia
+Mercedes Sosa|Alfonsina y el Mar
+Carlos Gardel|Volver
+Carlos Gardel|Mi Buenos Aires Querido
+Carlos Gardel|Por una Cabeza
+Carlos Gardel|El Día Que Me Quieras
+Carlos Gardel|Cuesta Abajo
+Astor Piazzolla|Libertango
+Astor Piazzolla|Oblivion
+Astor Piazzolla|Adiós Nonino
+Atahualpa Yupanqui|Los Ejes de Mi Carreta
+Atahualpa Yupanqui|Luna Tucumana
+Horacio Guarany|Si Se Calla el Cantor
+León Gieco|Solo le Pido a Dios
+León Gieco|Sólo Le Pido a Dios
+León Gieco|Cinco Siglos Igual
+León Gieco|La Colina de la Vida
+Los Chalchaleros|Zamba de Mi Esperanza
+Roberto Goyeneche|Balada para un Loco
+Julio Sosa|La Cumparsita
+Aníbal Troilo|Quejas de Bandoneón
+Carlos Di Sarli|Bahía Blanca
+Bajofondo|Pa' Bailar
+Bajofondo|Mi Corazón
+Gotan Project|Santa María (Del Buen Ayre)
+Gotan Project|Una Música Brutal
+Vicentico|Algo Contigo
 Divididos|Ala Delta
 `);
 

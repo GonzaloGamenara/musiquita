@@ -293,7 +293,7 @@
   function viewPlay() {
     const s = S.settings, n = poolSize(), nc = activeCats().length;
     const np = S.players.length;
-    const hint = s.mode === 'duel' ? (np > 2 ? 'En 1 vs 1 juegan los dos primeros de la lista.' : np < 2 ? 'No hace falta cargar nombres: si no hay, juegan “Jugador 1” y “Jugador 2”.' : 'Apoyen el celu en la mesa entre los dos: cada uno tiene su botón de su lado.')
+    const hint = s.mode === 'duel' ? (np > 2 ? 'En 1 vs 1 juegan los dos primeros de la lista.' : np < 2 ? 'No hace falta cargar nombres: si no hay, juegan “Jugador 1” y “Jugador 2”.' : 'Apoyen el celu entre los dos. Si uno toca y falla, el rival suma 1; el rival ve la respuesta para juzgar.')
       : np === 0 ? 'Sin jugadores: jugás solo, con 4 opciones por canción.'
         : (np === 1 && s.mode === 'buzzer') ? 'Con buzzers necesitás 2 o más jugadores. Con uno solo se juega por opciones.'
           : s.mode === 'buzzer' ? 'Cada uno tiene su buzzer: el primero que toca, responde en voz alta.'
@@ -424,7 +424,7 @@
       <div class="row col"><div class="lbl"><b>Tema</b></div>${seg('theme', [['auto', 'Automático'], ['light', 'Claro'], ['dark', 'Oscuro']], s.theme)}</div>
     </section>
     <section class="card"><div class="card-h"><h2><span class="ico">ℹ️</span>Tips</h2></div>
-      <p class="hint" style="margin-top:0">• Necesitás <b>internet</b> para escuchar los temas (la app abre sin conexión, pero la música no).<br>• Si no suena en el iPhone, fijate que no esté el <b>modo silencio</b> y que el volumen esté arriba.<br>• Para instalarla: Safari → <b>Compartir</b> → <b>Agregar a pantalla de inicio</b>.<br>• Mejor jugar con el cel en el medio de la mesa, ¡y con parlante! En <b>1 vs 1</b> cada uno toca el botón de su lado.</p>
+      <p class="hint" style="margin-top:0">• Necesitás <b>internet</b> para escuchar los temas (la app abre sin conexión, pero la música no).<br>• Si no suena en el iPhone, fijate que no esté el <b>modo silencio</b> y que el volumen esté arriba.<br>• Para instalarla: Safari → <b>Compartir</b> → <b>Agregar a pantalla de inicio</b>.<br>• Mejor jugar con el cel en el medio de la mesa, ¡y con parlante! En <b>1 vs 1</b> cada uno toca el botón de su lado; el rival ve la respuesta (manteniendo apretado) para juzgar, y si el otro falla, suma 1.</p>
     </section>
     <section class="card"><div class="card-h"><h2><span class="ico">🧹</span>Datos</h2></div>
       <button class="btn sm ghost" data-a="reset-all">Restablecer todo</button>
@@ -568,6 +568,11 @@
     const r = curRound(), i = G.buzzer;
     if (kind === 'bad') {
       sfx.wrong(); vib(150);
+      if (G.mode === 'duel') {   // el rival ya vio la respuesta: no puede competir, así que se lleva 1 punto y se revela
+        const o = 1 - i;
+        r.winner = o; r.pts = 1; r.steal = true; r.failer = i;
+        return reveal(o);
+      }
       G.locked.add(i); G.buzzer = null;
       if (G.locked.size >= G.players.length) return reveal(null);
       G.phase = 'listen'; G.clipEnd = Math.min(PREVIEW_MAX, Math.max(G.clipEnd, au.currentTime) + 5); G.clipDone = false;
@@ -817,10 +822,14 @@
       const side = (i, pos) => i === a
         ? dSide(i, pos, `<div class="dans"><div class="g-kicker">¡Respondé!</div><div class="ansbar"><i data-tb></i></div><div class="g-sub"><b data-tt>${G.st.answerSec}</b> seg · artista y canción en voz alta 🎤</div></div>`)
         : dSide(i, pos, `<div class="dans"><div class="g-sub dq">¿Lo dijo bien <b>${dName(a)}</b>?</div>
+            <div class="peekbtn" role="button" aria-label="Mantené apretado para ver la respuesta">
+              <span class="pk-off">👁️ Mantené apretado<br>para ver la respuesta</span>
+              <span class="pk-on"><b>${esc(curRound().song.t)}</b><small>${esc(curRound().song.a)}</small></span>
+            </div>
             <div class="drow">
               <button class="jd ok" data-a="g-judge" data-k="full"><b>✔ Clavó</b><small>+2</small></button>
               <button class="jd mid" data-a="g-judge" data-k="half"><b>½ Casi</b><small>+1</small></button>
-              <button class="jd bad" data-a="g-judge" data-k="bad"><b>✘ Falló</b><small>sigue</small></button>
+              <button class="jd bad" data-a="g-judge" data-k="bad"><b>✘ Falló</b><small>+1 para vos</small></button>
             </div></div>`);
       return duelWrap(side, `${vinyl(false)}<div class="g-sub" style="font-size:14px">Música en pausa ⏸️</div>`);
     },
@@ -828,7 +837,7 @@
       const r = curRound(), s = r.song, res = r.res, who = r.winner != null && r.winner >= 0 ? r.winner : null;
       const last = G.total > 0 && G.rounds.length >= G.total;
       const yt = 'https://www.youtube.com/results?search_query=' + encodeURIComponent(s.a + ' ' + s.t);
-      const side = (i, pos) => dSide(i, pos, `<div class="drv"><div class="rvmsg ${who === i ? 'win' : ''}">${who === i ? `🎉 ¡Sumaste +${r.pts}!` : who != null ? `${dName(who)} sumó +${r.pts}` : '😅 Nadie la adivinó'}</div>
+      const side = (i, pos) => dSide(i, pos, `<div class="drv"><div class="rvmsg ${who === i ? 'win' : ''}">${r.steal ? (who === i ? `🎯 +1 porque ${dName(r.failer)} falló` : `😬 Fallaste: +1 para ${dName(who)}`) : who === i ? `🎉 ¡Sumaste +${r.pts}!` : who != null ? `${dName(who)} sumó +${r.pts}` : '😅 Nadie la adivinó'}</div>
           <div class="drvt">${esc(s.t)}</div><div class="drva">${esc(s.a)}</div></div>
           <button class="btn dnext" data-a="g-next">${last ? 'Resultados 🏆' : 'Siguiente ▶'}</button>`);
       return duelWrap(side, `<div class="art" id="art">${res.i ? `<img src="${esc(res.i)}" alt="" onerror="this.remove()">` : '🎵'}</div>
@@ -1015,6 +1024,11 @@
     const fn = A[el.dataset.a];
     if (fn) { fn(el, e); }
   });
+  document.addEventListener('touchstart', () => { }, { passive: true }); // activa :active en iOS
+  const peekOff = () => $$('.peekbtn.on').forEach(b => b.classList.remove('on'));
+  document.addEventListener('pointerdown', e => { const b = e.target.closest && e.target.closest('.peekbtn'); if (b) b.classList.add('on'); });
+  ['pointerup', 'pointercancel', 'touchend', 'touchcancel', 'blur'].forEach(ev => document.addEventListener(ev, peekOff, true));
+  document.addEventListener('contextmenu', e => { if (e.target.closest && e.target.closest('.peekbtn')) e.preventDefault(); });
   document.addEventListener('input', e => {
     if (e.target.id !== 'q') return;
     UI.q = e.target.value;
