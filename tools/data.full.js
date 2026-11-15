@@ -1084,5 +1084,566 @@ Dua Lipa|Levitating
 Bizarrap|Quevedo: Bzrp Music Sessions, Vol. 52
 `);
 
+
+  add('hiphop', '🎤', 'Hip hop y R&B', `
+Dr. Dre|Still D.R.E.
+Snoop Dogg|Drop It Like It's Hot
+50 Cent|In da Club
+50 Cent|Candy Shop
+Jay-Z|Empire State of Mind
+Kanye West|Stronger
+Kanye West|Gold Digger
+Kanye West|Heartless
+Lil Wayne|A Milli
+Lil Wayne|Lollipop
+Nelly|Hot in Herre
+Ludacris|Stand Up
+OutKast|Hey Ya!
+OutKast|Ms. Jackson
+Missy Elliott|Get Ur Freak On
+Alicia Keys|Fallin'
+Alicia Keys|No One
+Alicia Keys|If I Ain't Got You
+Mary J. Blige|Family Affair
+Ne-Yo|So Sick
+Chris Brown|Run It!
+Chris Brown|Forever
+T.I.|Whatever You Like
+Akon|Smack That
+Akon|Lonely
+Sean Paul|Temperature
+Sean Paul|Get Busy
+Fetty Wap|Trap Queen
+Drake|Passionfruit
+Cardi B|Bodak Yellow
+Cardi B|WAP
+Megan Thee Stallion|Savage
+Post Malone|Congratulations
+Migos|Bad and Boujee
+Lil Uzi Vert|XO Tour Llif3
+XXXTENTACION|SAD!
+Juice WRLD|Lucid Dreams
+Travis Scott|goosebumps
+21 Savage|a lot
+DMX|Party Up (Up in Here)
+The Notorious B.I.G.|Juicy
+2Pac|California Love
+2Pac|Changes
+Wiz Khalifa|Black and Yellow
+Mac Miller|Self Care
+Kid Cudi|Day 'n' Nite
+Childish Gambino|This Is America
+Eminem|Stan
+Eminem|Mockingbird
+Eminem|The Real Slim Shady
+Beyoncé|Formation
+Rihanna|Work
+`);
+
+  add('baladas', '💔', 'Baladas románticas', `
+Luis Miguel|La Incondicional
+Luis Miguel|Ahora Te Puedes Marchar
+Luis Miguel|Por Debajo de la Mesa
+Luis Miguel|Hasta Que Me Olvides
+Luis Miguel|Cuando Calienta el Sol
+Luis Miguel|La Bikina
+Juan Gabriel|Amor Eterno
+Juan Gabriel|Hasta Que Te Conocí
+Juan Gabriel|Querida
+José José|El Triste
+José José|Almohada
+Camilo Sesto|Vivir Así Es Morir de Amor
+Franco De Vita|Te Amo
+Franco De Vita|Sin Ti
+Franco De Vita|Louis
+Ricardo Montaner|La Cima del Cielo
+Alejandro Fernández|Me Dediqué a Perderte
+Alejandro Fernández|Hoy Tengo Ganas de Ti
+Marco Antonio Solís|Si No Te Hubieras Ido
+Marco Antonio Solís|Tu Cárcel
+Roberto Carlos|Amigo
+Roberto Carlos|Detalles
+Roberto Carlos|Cama y Mesa
+Cristian Castro|Azul
+Cristian Castro|Lloran las Rosas
+Cristian Castro|Por Amarte Así
+Chayanne|Salomé
+Ricky Martin|Tu Recuerdo
+Ricardo Arjona|Historia de Taxi
+Il Divo|Regresa a Mí
+Andrea Bocelli|Con Te Partirò
+Julio Iglesias|Me Olvidé de Vivir
+Julio Iglesias|La Nave del Olvido
+Sandro|Una Muchacha y una Guitarra
+Camila|Mientes
+Reik|Creo en Ti
+Reik|Yo Quisiera
+Pimpinela|Olvídame y Pega la Vuelta
+Nino Bravo|Libre
+Nino Bravo|Un Beso y una Flor
+Rocío Dúrcal|Amor Eterno
+Los Ángeles Negros|Y Volveré
+Los Panchos|Contigo
+Armando Manzanero|Somos Novios
+Los Bukis|Y Ahora Te Vas
+Joan Sebastian|Secreto de Amor
+Yuri|Maldita Primavera
+Emmanuel|Toda la Vida
+Cesar Banana Pueyrredón|Bombón
+`);
+
+  add('salsa', '🌴', 'Salsa, merengue y tropical', `
+Celia Cruz|La Vida Es un Carnaval
+Celia Cruz|Quimbara
+Marc Anthony|Flor Pálida
+Marc Anthony|Y Hubo Alguien
+Gilberto Santa Rosa|Conteo Regresivo
+Juan Luis Guerra|La Bilirrubina
+Juan Luis Guerra|Burbujas de Amor
+Juan Luis Guerra|Ojalá Que Llueva Café
+Juan Luis Guerra|Bachata Rosa
+Carlos Vives|La Bicicleta
+Carlos Vives|Fruta Fresca
+Carlos Vives|La Tierra del Olvido
+Elvis Crespo|Suavemente
+Grupo Niche|Cali Pachanguero
+Grupo Niche|Una Aventura
+Willie Colón|Idilio
+Héctor Lavoe|El Cantante
+Rubén Blades|Pedro Navaja
+Rubén Blades|Plástico
+Oscar D'León|Llorarás
+Tito Puente|Oye Como Va
+Santana|Smooth
+Santana|Maria Maria
+Gente de Zona|La Gozadera
+Jerry Rivera|Amores Como el Nuestro
+Los Van Van|Sandunguera
+Buena Vista Social Club|Chan Chan
+Buena Vista Social Club|Dos Gardenias
+Aventura|Obsesión
+Aventura|Un Beso
+Romeo Santos|Eres Mía
+Prince Royce|Darte un Beso
+Xtreme|Te Extraño
+Monchy y Alexandra|Dos Locos
+Wilfrido Vargas|El Jardinero
+Fonseca|Te Mando Flores
+Daniela Darcourt|Un Año Más
+Ráfaga|Mentirosa
+Marc Anthony|Vivir Mi Vida
+`);
+
+  add('indie', '🎧', 'Indie y rock alternativo', `
+Arctic Monkeys|505
+Arctic Monkeys|Why'd You Only Call Me When You're High?
+Arctic Monkeys|Fluorescent Adolescent
+The Kooks|Naive
+The Kooks|She Moves in Her Own Way
+The Strokes|Reptilia
+The Strokes|Someday
+Franz Ferdinand|Take Me Out
+Vampire Weekend|A-Punk
+MGMT|Kids
+MGMT|Electric Feel
+Phoenix|1901
+Tame Impala|The Less I Know the Better
+Tame Impala|Let It Happen
+Foster the People|Pumped Up Kicks
+The Black Keys|Lonely Boy
+The Black Keys|Gold on the Ceiling
+Two Door Cinema Club|What You Know
+Cage the Elephant|Ain't No Rest for the Wicked
+Cage the Elephant|Cigarette Daydreams
+Gorillaz|Feel Good Inc.
+Gorillaz|Clint Eastwood
+Yeah Yeah Yeahs|Heads Will Roll
+Bloc Party|Helicopter
+Arcade Fire|Wake Up
+Radiohead|Karma Police
+Radiohead|No Surprises
+Beck|Loser
+Pixies|Where Is My Mind?
+Lana Del Rey|Summertime Sadness
+Lana Del Rey|Video Games
+Lana Del Rey|Born to Die
+Lorde|Green Light
+Florence + The Machine|Dog Days Are Over
+Florence + The Machine|Shake It Out
+Hozier|Take Me to Church
+The Neighbourhood|Sweater Weather
+Mac DeMarco|Chamber of Reflection
+Zoé|Labios Rotos
+Zoé|Soñé
+Aterciopelados|Bolero Falaz
+Los Amigos Invisibles|Ponerte Pa' Mí
+Babasónicos|Putita
+Él Mató a un Policía Motorizado|Chica Rutera
+Cuarteto de Nos|Cumpleaños
+The Cardigans|Lovefool
+Weezer|Buddy Holly
+Weezer|Island in the Sun
+Vance Joy|Riptide
+Of Monsters and Men|Little Talks
+`);
+
+  add('metal', '🤘', 'Metal y hard rock', `
+Iron Maiden|The Trooper
+Iron Maiden|Run to the Hills
+Iron Maiden|Fear of the Dark
+Black Sabbath|Paranoid
+Black Sabbath|Iron Man
+Judas Priest|Breaking the Law
+Ozzy Osbourne|Crazy Train
+Ozzy Osbourne|Mama, I'm Coming Home
+Slipknot|Duality
+Slipknot|Psychosocial
+Pantera|Walk
+Megadeth|Symphony of Destruction
+Slayer|Raining Blood
+Motörhead|Ace of Spades
+Scorpions|Wind of Change
+Scorpions|Still Loving You
+Def Leppard|Pour Some Sugar on Me
+Mötley Crüe|Kickstart My Heart
+Whitesnake|Here I Go Again
+Van Halen|Jump
+Van Halen|Panama
+Twisted Sister|We're Not Gonna Take It
+KISS|I Was Made for Lovin' You
+KISS|Rock and Roll All Nite
+Deep Purple|Smoke on the Water
+Rammstein|Du Hast
+Rammstein|Sonne
+Rammstein|Ich Will
+Disturbed|Down with the Sickness
+Disturbed|The Sound of Silence
+Avenged Sevenfold|Bat Country
+Avenged Sevenfold|Nightmare
+Bullet for My Valentine|Tears Don't Fall
+Three Days Grace|I Hate Everything About You
+Papa Roach|Last Resort
+Korn|Blind
+Korn|Freak on a Leash
+Sepultura|Roots Bloody Roots
+Sepultura|Refuse/Resist
+Rata Blanca|La Leyenda del Hada y el Mago
+Almafuerte|Cuando el Pasado Te Alcance
+Hermética|Sentimiento Metálico
+V8|Destrucción
+Lamb of God|Redneck
+Metallica|Fuel
+Metallica|The Unforgiven
+Guns N' Roses|Don't Cry
+Guns N' Roses|Patience
+Nickelback|How You Remind Me
+Nickelback|Photograph
+`);
+
+  add('kpop', '🇰🇷', 'K-pop y fenómenos globales', `
+BTS|Dynamite
+BTS|Butter
+BTS|Boy With Luv
+BTS|Fake Love
+BTS|Life Goes On
+BLACKPINK|DDU-DU DDU-DU
+BLACKPINK|Kill This Love
+BLACKPINK|How You Like That
+BLACKPINK|Pink Venom
+PSY|Gentleman
+Stray Kids|God's Menu
+NewJeans|Hype Boy
+NewJeans|Ditto
+TWICE|Cheer Up
+TWICE|What Is Love?
+EXO|Growl
+BIGBANG|Fantastic Baby
+Super Junior|Sorry, Sorry
+Girls' Generation|Gee
+LISA|Money
+Jungkook|Seven
+Jimin|Like Crazy
+ROSÉ|On The Ground
+aespa|Next Level
+ITZY|DALLA DALLA
+Lady Gaga|Alejandro
+Lady Gaga|Born This Way
+Taylor Swift|Bad Blood
+Katy Perry|Last Friday Night
+`);
+
+  add('regional', '🪗', 'Cumbia mexicana y regional', `
+Peso Pluma|La Bebe
+Peso Pluma|Lagunas
+Natanael Cano|Soy el Diablo
+Junior H|Y Lloro
+Eslabon Armado|Ella Baila Sola
+Grupo Frontera|No Se Va
+Fuerza Regida|Bebe Dame
+Fuerza Regida|TQM
+Carín León|Me Va a Extrañar
+Banda MS|Mi Razón de Ser
+Banda MS|Hermosa Experiencia
+Los Tigres del Norte|La Puerta Negra
+Los Tigres del Norte|La Jaula de Oro
+Los Tigres del Norte|Contrabando y Traición
+Vicente Fernández|Volver, Volver
+Vicente Fernández|El Rey
+Vicente Fernández|Por Tu Maldito Amor
+Pedro Infante|Amorcito Corazón
+Selena|Bidi Bidi Bom Bom
+Selena|Como la Flor
+Selena|Amor Prohibido
+Los Temerarios|Te Hice Mal
+Los Ángeles Azules|Nunca Es Suficiente
+Intocable|Por Amarte
+Mariachi Vargas de Tecalitlán|El Son de la Negra
+Juan Gabriel|El Noa Noa
+Christian Nodal|Adiós Amor
+Christian Nodal|Botella Tras Botella
+Los Alegres del Barranco|El Moro de Cumpas
+Ramón Ayala|Tragos Amargos
+Rocío Dúrcal|Costumbres
+Jenni Rivera|Ya Lo Sé
+Jenni Rivera|La Gran Señora
+`);
+
+  add('anime-op', '🍥', 'Openings de anime y juegos', `
+Hironobu Kageyama|Cha-La Head-Cha-La
+Hiroshi Kitadani|We Are!
+Ikimono-gakari|Blue Bird
+Linked Horizon|Guren no Yumiya
+LiSA|Gurenge
+LiSA|Crossing Field
+YUI|Again
+KANA-BOON|Silhouette
+TK from Ling tosite sigure|Unravel
+YOASOBI|Yoru ni Kakeru
+YOASOBI|Idol
+Ado|Usseewa
+Kenshi Yonezu|Lemon
+Kenshi Yonezu|KICK BACK
+Official HIGE DANdism|Pretender
+Official HIGE DANdism|Mixed Nuts
+Aimer|Zankyosanka
+MAN WITH A MISSION|Database
+MAKE-UP|Pegasus Fantasy
+ASIAN KUNG-FU GENERATION|Haruka Kanata
+FLOW|GO!!!
+FLOW|Sign
+ORANGE RANGE|Asterisk
+Eve|Kaikai Kitan
+JAM Project|The Hero!!
+Masatoshi Ono|Departure!
+Hiroaki Tommy Tominaga|Sono Chi no Sadame
+Yoko Takahashi|A Cruel Angel's Thesis
+The Seatbelts|Tank!
+Crush 40|Live & Learn
+Crush 40|Sonic Heroes
+Dalí|Moonlight Densetsu
+Ayumi Miyazaki|Brave Heart
+Mrs. GREEN APPLE|Inferno
+King Gnu|Hakujitsu
+Creepy Nuts|Bling-Bang-Bang-Born
+Fujii Kaze|Shinunoga E-Wa
+`);
+
+  add('navidad', '🎄', 'Navidad y fiestas', `
+Mariah Carey|All I Want for Christmas Is You
+Michael Bublé|It's Beginning to Look a Lot Like Christmas
+Michael Bublé|Jingle Bells
+Bing Crosby|White Christmas
+Brenda Lee|Rockin' Around the Christmas Tree
+Andy Williams|It's the Most Wonderful Time of the Year
+Band Aid|Do They Know It's Christmas?
+John Lennon|Happy Xmas (War Is Over)
+José Feliciano|Feliz Navidad
+Boney M.|Mary's Boy Child - Oh My Lord
+Kelly Clarkson|Underneath the Tree
+Ariana Grande|Santa Tell Me
+Justin Bieber|Mistletoe
+Elvis Presley|Blue Christmas
+Dean Martin|Let It Snow! Let It Snow! Let It Snow!
+Pentatonix|Little Drummer Boy
+Stevie Wonder|Happy Birthday
+Shakin' Stevens|Merry Christmas Everyone
+The Pogues|Fairytale of New York
+Slade|Merry Xmas Everybody
+Wham!|Last Christmas
+Paul McCartney|Wonderful Christmastime
+Sia|Santa's Coming for Us
+Coldplay|Christmas Lights
+Los Auténticos Decadentes|Mi Vida Loca
+Luis Miguel|Navidad Navidad
+Los Nocheros|Navidad Argentina
+Marc Anthony|Navidad Sin Ti
+`);
+
+  add('clasicos70', '📻', 'Clásicos de los 60 y 70', `
+Fleetwood Mac|Dreams
+Fleetwood Mac|Go Your Own Way
+David Bowie|Heroes
+David Bowie|Space Oddity
+David Bowie|Let's Dance
+Elton John|Rocket Man
+Elton John|Your Song
+Elton John|I'm Still Standing
+Stevie Wonder|Superstition
+Stevie Wonder|I Just Called to Say I Love You
+Marvin Gaye|Let's Get It On
+Marvin Gaye|What's Going On
+Bob Dylan|Like a Rolling Stone
+Bob Dylan|Blowin' in the Wind
+Simon & Garfunkel|The Sound of Silence
+Simon & Garfunkel|Mrs. Robinson
+The Beach Boys|Good Vibrations
+The Beach Boys|God Only Knows
+The Doors|Light My Fire
+The Doors|Riders on the Storm
+Jimi Hendrix|Purple Haze
+Jimi Hendrix|All Along the Watchtower
+Creedence Clearwater Revival|Fortunate Son
+Creedence Clearwater Revival|Have You Ever Seen the Rain?
+The Who|Baba O'Riley
+The Who|My Generation
+Lynyrd Skynyrd|Sweet Home Alabama
+Lynyrd Skynyrd|Free Bird
+Bob Seger|Old Time Rock & Roll
+Chuck Berry|Johnny B. Goode
+Elvis Presley|Can't Help Falling in Love
+Elvis Presley|Jailhouse Rock
+Ray Charles|Hit the Road Jack
+Frank Sinatra|My Way
+Frank Sinatra|Fly Me to the Moon
+Nat King Cole|L-O-V-E
+The Police|Roxanne
+The Police|Every Breath You Take
+Dire Straits|Sultans of Swing
+Dire Straits|Money for Nothing
+Phil Collins|In the Air Tonight
+Phil Collins|Against All Odds
+Supertramp|The Logical Song
+Supertramp|Breakfast in America
+Boston|More Than a Feeling
+Foreigner|I Want to Know What Love Is
+Foreigner|Cold as Ice
+Heart|Barracuda
+Blondie|Heart of Glass
+Blondie|Call Me
+Carpenters|Close to You
+John Denver|Take Me Home, Country Roads
+Eric Clapton|Tears in Heaven
+Eric Clapton|Layla
+Santana|Black Magic Woman
+Cat Stevens|Wild World
+Don McLean|American Pie
+Neil Diamond|Sweet Caroline
+The Beatles|Don't Let Me Down
+The Beatles|Blackbird
+The Beatles|Yellow Submarine
+Queen|Killer Queen
+Led Zeppelin|Immigrant Song
+Rod Stewart|Maggie May
+`);
+
+  add('reggae', '🟢', 'Reggae y ska', `
+Bob Marley & The Wailers|One Love / People Get Ready
+Bob Marley & The Wailers|Three Little Birds
+Bob Marley & The Wailers|No Woman, No Cry
+Bob Marley & The Wailers|Is This Love
+Bob Marley & The Wailers|Redemption Song
+Bob Marley & The Wailers|Could You Be Loved
+UB40|Red Red Wine
+UB40|Can't Help Falling in Love
+Peter Tosh|Legalize It
+Jimmy Cliff|The Harder They Come
+Toots & The Maytals|Pressure Drop
+Damian Marley|Welcome to Jamrock
+Los Cafres|Tiempos Mejores
+Cultura Profética|Lo Que Hay
+Cultura Profética|La Complicidad
+Natiruts|Presente de Um Beija-Flor
+Matisyahu|King Without a Crown
+Sublime|Santeria
+Sublime|What I Got
+The Police|Walking on the Moon
+No Doubt|Don't Speak
+No Doubt|Just a Girl
+The Specials|Ghost Town
+Madness|Our House
+Ziggy Marley|Tomorrow People
+Gondwana|Tu Tiempo
+Dread Mar I|Llegando a Ti
+Los Pericos|Pupilas Lejanas
+Los Pericos|Runaway
+Alika|Sin Cadenas
+Eddy Grant|Electric Avenue
+Inner Circle|Bad Boys
+Shaggy|Boombastic
+`);
+
+  add('pop-latino', '🌟', 'Pop latino de los 90 y 2000', `
+Thalía|Piel Morena
+Thalía|Arrasando
+Thalía|Entre el Mar y una Estrella
+Paulina Rubio|Te Quise Tanto
+Paulina Rubio|Mía
+Paulina Rubio|Ni Rosas Ni Juguetes
+Paulina Rubio|Alma en Libertad
+Belinda|Luz Sin Gravedad
+Belinda|Bella Traición
+Belinda|Egoísta
+Anahí|Mi Delirio
+Dulce María|Inevitable
+Camila|Todo Cambió
+Camila|De Mí
+Julieta Venegas|Me Voy
+Julieta Venegas|Limón y Sal
+Natalia Lafourcade|Hasta la Raíz
+Natalia Lafourcade|Tú Sí Sabes Quererme
+Kany García|Cuando Es Amor
+Fanny Lu|Tú No Eres para Mí
+Shakira|Pies Descalzos, Sueños Blancos
+Shakira|Suerte
+Shakira|Hay Amores
+Alejandro Sanz|No Es lo Mismo
+Alejandro Sanz|Y, ¿Si Fuera Ella?
+Gloria Trevi|Todos Me Miran
+Gloria Trevi|Pelo Suelto
+Lucero|Electricidad
+Alejandra Guzmán|Hacer el Amor con Otro
+Mónica Naranjo|Sobreviviré
+Amaral|Sin Ti No Soy Nada
+Amaral|Te Necesito
+Pablo Alborán|Solamente Tú
+Pablo Alborán|Saturno
+Dani Martín|Cero
+Melendi|Tu Jardín con Enanitos
+Melendi|Barbie de Extrarradio
+Estopa|Como Camarón
+Estopa|La Raja de Tu Falda
+Estopa|Vino Tinto
+Fito & Fitipaldis|Por la Boca Vive el Pez
+Manu Chao|Me Gustas Tú
+Manu Chao|Clandestino
+Manu Chao|Bongo Bong
+El Canto del Loco|Zapatillas
+El Canto del Loco|Besos
+La Quinta Estación|El Sol No Regresa
+Marta Sánchez|Desesperada
+Álex Ubago|Sin Miedo a Nada
+David Bisbal|Ave María
+David Bisbal|Bulería
+Chenoa|Cuando Tú Vas
+Merche|Abre Tu Mente
+Las Ketchup|Aserejé
+Enrique Iglesias|Experiencia Religiosa
+Ricky Martin|She Bangs
+Shakira|La Tortura
+Maná|Eres Mi Religión
+Sin Bandera|Mientes Tan Bien
+Los Auténticos Decadentes|Es Increíble
+`);
+
   window.MUSIQUITA_CATS = R;
 })();

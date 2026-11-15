@@ -825,37 +825,137 @@ Bajofondo|Mi Corazón
 Gotan Project|Santa María (Del Buen Ayre)
 Gotan Project|Una Música Brutal
 Vicentico|Algo Contigo
+Los Manseros Santiagueños|Chacarera del Rancho
 Divididos|Ala Delta
 `);
 
   add('mundial', '🏟️', 'Mundial y cancha', `
+La Mosca|Muchachos, Ahora Nos Volvimos a Ilusionar
 Shakira|Waka Waka (This Time for Africa)
+K'naan|Wavin' Flag
 Ricky Martin|La Copa de la Vida
 Queen|We Are the Champions
 Queen|We Will Rock You
+The White Stripes|Seven Nation Army
 Pitbull|We Are One (Ole Ola)
+Jennifer Lopez|On the Floor
 Nicky Jam|Live It Up
+Trinidad Cardona|Hayya Hayya (Better Together)
 Ozuna|Arhbo
 Nicki Minaj|Tukoh Taka
 Rodrigo|La Mano de Dios
 Los Fabulosos Cadillacs|Vasos Vacíos
 Los Piojos|Maradó
+Boca Juniors|Soy de Boca
 Los Auténticos Decadentes|Los Piratas
 Soda Stereo|De Música Ligera
 Fito Páez|Un Vestido y un Amor
 Charly García|Los Dinosaurios
+Gianluca Grignani|Falco a Metà
 Daddy Yankee|Gasolina
 Maná|Rayando el Sol
 Enrique Iglesias|Bailando
+Estopa|Como Camarón
 `);
 
   add('electro', '🎹', 'Electrónica y dance', `
+Daft Punk|One More Time
+Daft Punk|Get Lucky
+Daft Punk|Harder, Better, Faster, Stronger
+Daft Punk|Around the World
+Avicii|Wake Me Up
+Avicii|Levels
+Avicii|Hey Brother
 Calvin Harris|Summer
 Calvin Harris|This Is What You Came For
 Calvin Harris|Feel So Close
+David Guetta|Titanium
+David Guetta|When Love Takes Over
+David Guetta|Memories
+Swedish House Mafia|Don't You Worry Child
+Martin Garrix|Animals
+Martin Garrix|In the Name of Love
+Zedd|Clarity
+Zedd|Stay
+Kygo|Firestone
+Major Lazer|Lean On
+Major Lazer|Cold Water
+Marshmello|Happier
+Marshmello|Alone
+The Chainsmokers|Closer
+The Chainsmokers|Don't Let Me Down
+Alan Walker|Faded
+Skrillex|Scary Monsters and Nice Sprites
+Deadmau5|Ghosts 'n' Stuff
+Tiësto|The Business
+Tiësto|Adagio for Strings
+Robin Schulz|Sugar
+Clean Bandit|Rather Be
+Clean Bandit|Rockabye
+Disclosure|Latch
+Fatboy Slim|Praise You
+The Prodigy|Firestarter
+Darude|Sandstorm
 Eiffel 65|Blue (Da Ba Dee)
+Lost Frequencies|Are You with Me
+Mark Ronson|Uptown Funk
+Kungs|This Girl
+Gryffin|Feel Good
+Cascada|Evacuate the Dancefloor
+Safri Duo|Played-A-Live
+Benny Benassi|Satisfaction
+Armin van Buuren|This Is What It Feels Like
+Axwell /\\ Ingrosso|More Than You Know
+Fisher|Losing It
+Peggy Gou|(It Goes Like) Nanana
 Dua Lipa|Levitating
 Bizarrap|Quevedo: Bzrp Music Sessions, Vol. 52
+`);
+
+
+  add('hiphop', '🎤', 'Hip hop y R&B', `
+`);
+
+  add('baladas', '💔', 'Baladas románticas', `
+`);
+
+  add('salsa', '🌴', 'Salsa, merengue y tropical', `
+Ráfaga|Mentirosa
+Marc Anthony|Vivir Mi Vida
+`);
+
+  add('indie', '🎧', 'Indie y rock alternativo', `
+`);
+
+  add('metal', '🤘', 'Metal y hard rock', `
+Rata Blanca|La Leyenda del Hada y el Mago
+`);
+
+  add('kpop', '🇰🇷', 'K-pop y fenómenos globales', `
+`);
+
+  add('regional', '🪗', 'Cumbia mexicana y regional', `
+`);
+
+  add('anime-op', '🍥', 'Openings de anime y juegos', `
+`);
+
+  add('navidad', '🎄', 'Navidad y fiestas', `
+Wham!|Last Christmas
+`);
+
+  add('clasicos70', '📻', 'Clásicos de los 60 y 70', `
+`);
+
+  add('reggae', '🟢', 'Reggae y ska', `
+Los Pericos|Pupilas Lejanas
+Los Pericos|Runaway
+`);
+
+  add('pop-latino', '🌟', 'Pop latino de los 90 y 2000', `
+Estopa|Como Camarón
+Las Ketchup|Aserejé
+Shakira|La Tortura
 `);
 
   window.MUSIQUITA_CATS = R;
