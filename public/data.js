@@ -1287,6 +1287,10 @@ Dave Rodgers|Running in the 90's|Initial D
 Ichiro Mizuki|Mazinger Z|Mazinger Z
 Mitsuko Horie|Candy Candy|Candy Candy
 Megumi Hayashibara|Over Soul|Shaman King
+Azumi Inoue|Tonari no Totoro|Mi vecino Totoro
+Azumi Inoue|Carrying You|El castillo en el cielo
+Joe Hisaishi|The Merry-Go-Round of Life|El castillo ambulante
+Yoshikazu Mera|Mononoke Hime|La princesa Mononoke
 `);
 
   add("navidad", "🎄", "Navidad y fiestas", `
