@@ -800,7 +800,6 @@ Jesse McCartney|Beautiful Soul
 Sean Kingston|Beautiful Girls
 Tokio Hotel|Monsoon
 Tokio Hotel|Durch den Monsun
-Dragon Ball|Cha-La Head-Cha-La
 Los Pitufos|La Canción de los Pitufos
 Bob Esponja|La Canción de Bob Esponja
 Fito Páez|Soldadito Marinero
@@ -1413,10 +1412,10 @@ Jenni Rivera|Ya Lo Sé
 Jenni Rivera|La Gran Señora
 `);
 
-  add('anime-op', '🍥', 'Openings de anime y juegos', `
+  add('anime-op', '🍥', 'Openings de anime y juegos (originales)', `
 Hironobu Kageyama|Cha-La Head-Cha-La|Dragon Ball Z
-Hiroshi Kitadani|We Are!|One Piece
-Ikimono-gakari|Blue Bird|Naruto Shippuden
+Hiroshi Kitadani|We Are!|One Piece => きただにひろし|ウィーアー!
+Ikimono-gakari|Blue Bird|Naruto Shippuden => いきものがかり|ブルーバード
 Linked Horizon|Guren no Yumiya|Ataque a los Titanes
 LiSA|Gurenge|Demon Slayer
 LiSA|Crossing Field|Sword Art Online
@@ -1442,7 +1441,7 @@ JAM Project|The Hero!!|One Punch Man
 Masatoshi Ono|Departure!|Hunter x Hunter
 Hiroaki Tommy Tominaga|Sono Chi no Sadame|JoJo's Bizarre Adventure
 Yoko Takahashi|A Cruel Angel's Thesis|Neon Genesis Evangelion
-The Seatbelts|Tank!|Cowboy Bebop
+The Seatbelts|Tank!|Cowboy Bebop => シートベルツ|Tank!
 Crush 40|Live & Learn|Sonic Adventure 2
 Crush 40|Sonic Heroes|Sonic Heroes (videojuego)
 Dalí|Moonlight Densetsu|Sailor Moon
@@ -1451,6 +1450,75 @@ Mrs. GREEN APPLE|Inferno|Fire Force
 King Gnu|Hakujitsu
 Creepy Nuts|Bling-Bang-Bang-Born|Mashle
 Fujii Kaze|Shinunoga E-Wa
+Hironobu Kageyama|We Gotta Power|Dragon Ball Z
+Hironobu Kageyama|Rock the Dragon|Dragon Ball Z
+Hiroki Takahashi|Makafushigi Adventure!|Dragon Ball => 高橋洋樹|Doragon Ball - Makafushigi Adventure!
+Field of View|DAN DAN Kokoro Hikarete ku|Dragon Ball GT
+Takayoshi Tanimoto|Dragon Soul|Dragon Ball Z Kai
+Kazuya Yoshii|Chozetsu Dynamic!|Dragon Ball Super => 吉井和哉|Cho-Zets☆Dynamic!
+Kiyoshi Hikawa|Limit-Break x Survivor|Dragon Ball Super
+Folder5|Believe|One Piece
+The Babystars|Hikari e|One Piece => ザ・ベイビースターズ|Hikari e
+AAA|Bon Voyage!|One Piece
+Hiroshi Kitadani|We Go!|One Piece => きただにひろし|ウィーゴー!
+Ado|New Genesis|One Piece Film Red
+7!!|Lovers|Naruto Shippuden => 7!!(セブンウップス)|ラヴァーズ
+HEARTS GROW|Rocks|Naruto
+NICO Touches the Walls|Diver|Naruto Shippuden
+Ikimono-gakari|Hotaru no Hikari|Naruto Shippuden => いきものがかり|ホタルノヒカリ
+Joe Inoue|Closer|Naruto
+SAMBOMASTER|Seishun Kyosokyoku|Naruto Shippuden
+High and Mighty Color|Ichirin no Hana|Bleach => HIGH AND MIGHTY COLOR|一輪の花
+UVERworld|D-tecnoLife|Bleach
+YUI|Rolling star|Bleach
+ASIAN KUNG-FU GENERATION|Rewrite|Fullmetal Alchemist
+Porno Graffitti|Melissa|Fullmetal Alchemist
+Nightmare|The World|Death Note
+Maximum the Hormone|Zetsubou Billy|Death Note
+Linked Horizon|Shinzo wo Sasageyo!|Ataque a los Titanes
+Linked Horizon|Jiyuu no Tsubasa|Ataque a los Titanes
+SiM|The Rumbling|Ataque a los Titanes
+LiSA|Akeboshi|Demon Slayer
+LiSA|Homura|Demon Slayer: Mugen Train
+King Gnu|SPECIALZ|Jujutsu Kaisen
+Porno Graffitti|The Day|My Hero Academia
+Kenshi Yonezu|Peace Sign|My Hero Academia
+Eir Aoi|Innocence|Sword Art Online
+SPYAIR|Imagination|Haikyu!!
+FUNKIST|Snow Fairy|Fairy Tail
+Vickeblanka|Black Catcher|Black Clover => ビッケブランカ|Black Catcher
+MOB CHOIR|99|Mob Psycho 100
+Rika Matsumoto|Mezase Pokémon Master|Pokémon => 松本梨香|めざせポケモンマスター -20th Anniversary- [TVアニメ サイズ]
+Koji Wada|Butter-Fly|Digimon Adventure => 和田光司|Butter-Fly
+Koji Wada|Fire!!|Digimon Frontier => 和田光司|Fire!!
+Koji Wada|Target ~Akai Shogeki~|Digimon Adventure 02
+Koji Wada|The Biggest Dreamer|Digimon Tamers => 和田光司|The Biggest Dreamer
+Gumi|Catch You Catch Me|Sakura Card Captors
+Maaya Sakamoto|Platinum|Sakura Card Captors
+V6|Change the World|Inuyasha
+Namie Amuro|Owarinai Yume|Inuyasha
+Every Little Thing|Grip!|Inuyasha
+Do As Infinity|Fukai Mori|Inuyasha
+Dream|My Will|Inuyasha
+JUDY AND MARY|Sobakasu|Samurai X
+T.M.Revolution|Heart of Sword ~Yoake Mae~|Samurai X => T.M.Revolution|HEART OF SWORD 〜夜明け前〜
+SIAM SHADE|1/2|Samurai X
+Matsuko Mawatari|Hohoemi no Bakudan|Yu Yu Hakusho => 馬渡松子|Hohoemi no Bakudan
+BAAD|Kimi ga Suki da to Sakebitai|Slam Dunk => BAAD|君が好きだと叫びたい
+Kumiko Osugi|Doraemon no Uta|Doraemon => 大杉久美子|ドラえもんのうた
+mao|Yume wo Kanaete Doraemon|Doraemon
+Dave Rodgers|Deja Vu|Initial D
+Dave Rodgers|Running in the 90's|Initial D
+Ichiro Mizuki|Mazinger Z|Mazinger Z
+Mitsuko Horie|Candy Candy|Candy Candy
+Masatoshi Ono|Hunting for Your Dream|Hunter x Hunter
+Megumi Hayashibara|Over Soul|Shaman King
+Claire Littley|Fly Me to the Moon|Neon Genesis Evangelion
+Azumi Inoue|Tonari no Totoro|Mi vecino Totoro
+Azumi Inoue|Carrying You|El castillo en el cielo
+Yumi Kimura|Always With Me|El viaje de Chihiro
+Joe Hisaishi|The Merry-Go-Round of Life|El castillo ambulante => Joe Hisaishi|Merry-Go-Round(人生のメリーゴーランド)
+Yoshikazu Mera|Mononoke Hime|La princesa Mononoke => 米良美一|もののけ姫(もののけ姫)
 `);
 
   add('navidad', '🎄', 'Navidad y fiestas', `
@@ -1651,41 +1719,11 @@ Los Auténticos Decadentes|Es Increíble
 `);
 
 
-  add('intros-es', '📺', 'Openings y temas en español latino', `
-Dragon Ball Z|Cha-La Head-Cha-La (Opening latino) => Ricardo Silva|Cha-La Head Cha-La
-Dragon Ball Z|Ángeles Fuimos (Ending latino) => Ricardo Silva|Ángeles Fuimos
-Dragon Ball Super|Limit Break X Survivor (Opening latino) => Ricardo Silva|Opening 2 Limit Break X Survivor
-Dragon Ball GT|Mi Corazón Encantado (Opening latino) => Ricardo Silva|Mi Corazón Encantado Dbgt
-Dragon Ball GT|Opening latino => Pablo Galán|Dragon Ball GT Opening
-One Piece|El Sake de Binks (Opening latino) => Ricardo Silva|Sake de Binks
-Los Caballeros del Zodiaco|Pegasus Fantasy (Opening latino) => Power Up Orchestra|Pegasus Fantasy (From Saint Seiya / Los Caballeros del Zodíaco - Opening Latino) [Live]
-Los Caballeros del Zodiaco|Pegasus Fantasy (Cover latino) => James Mart|Pegasus Fantasy (From "Los Caballeros Del Zodiaco") [Cover]
-Supercampeones|Moete Hero (Opening latino) => Power Up Orchestra|Supercampeones (Moete Hero Opening Latino) [En Vivo]
-Pokémon|Tengo que ser un maestro Pokémon => Pokémon|Tengo Que Ser Un Maestro Pokémon
-Digimon|Butterfly (Opening latino) => Miree|Butterfly (From "Digimon") [Cover Español Latino]
-Digimon Frontier|Fire! (Opening) => Caminos Cruzados|Fire! (Digimon Frontier Opening)
-Sailor Moon|Luz de Luna (Opening latino) => Salomé Anjarí|Moonlight Densetsu (Luz de Luna Opening Latino from Sailor Moon)
-Naruto|Haruka Kanata (Opening latino) => Kanne Find|Naruto Opening 2 - Haruka Kanata (Español Latino)
-Naruto Shippuden|Silhouette (Opening latino) => Lyrical Legends Music|Silhouette (Español Latino)
-Naruto Shippuden|Blue Bird (Opening latino) => Balutaku Covers|Blue Bird (From "Naruto Shippuden") [Cover Español Latino]
-Naruto Shippuden|Lovers (Opening latino) => Lyrical Legends Music|Lovers (Español Latino)
-Inuyasha|Owarinai Yume (Opening latino) => Salomé Anjarí|Owarinai Yume (Inuyasha Opening 3 Español Latino)
-Inuyasha|Grip! (Opening latino) => Salomé Anjarí|Grip! Inuyasha Opening 4 Español Latino
-Samurai X|Sobakasu (Opening latino) => Lyrical Legends Music|Sobakasu
-Samurai X|Cuando las Lágrimas => Jade|Cuando las Lágrimas (Samurai X) [De Película]
-Beyblade|Let It Rip! (Opening latino) => Neversoft|Let It Rip! (Beyblade Opening Latino)
-Beyblade|Let's Beyblade! (Opening latino) => Inheres|Let's Beyblade! (Opening Latino)
-Candy Candy|Tema de apertura => CoverVerse Latino|Candy Candy (Tema de Apertura)
-Sakura Card Captors|Yo Te Atrapo, Tú Me Atrapas (Opening latino) => Adrián Barba|Yo Te Atrapo, Tú Me Atrapas
-Sakura Card Captors|Groovy (Ending latino) => Salomé Anjarí|Groovy (Sakura Card Captor Ending Español Latino)
-Hunter x Hunter|Ohayou (Opening latino) => Adrián Barba|Ohayou (From "Hunter X Hunter") [Cover Latino]
-Shaman King|Over Soul (Opening latino) => Salomé Anjarí|Over Soul (Shaman King Opening Español Latino)
-Mazinger Z|Opening latino => Power Up Orchestra|Opening (From "Mazinger Z") [Live]
+  add('intros-es', '📺', 'Dibujos, Disney y series en español', `
 Los Padrinos Mágicos|Mientras Vueles Conmigo => The Camera is On|Mientras Vueles Conmigo (Los Padrinos Mágicos)
 Las Chicas Superpoderosas|Tema final => The Camera is On & Tami Rosales|Las Chicas Superpoderosas (Outro)
 Bob Esponja|Canción inicial => Grupo Infantil Guarderia Pon|Bob Esponja (Canción Inicial de la Serie de Dibujos Animados)
 Los Pitufos|Somos los Pitufos => Grupo Infantil Guarderia Pon|Somos los Pitufos (De "Los Pitufos de la Tele")
-La Abeja Maya|En un país multicolor => Grupo Infantil Guarderia Pon|En un País Multicolor (De "La Abeja Maya")
 Los Picapiedra|Tema (Los Pequeños Picapiedra) => Grupo Infantil Guarderia Pon|The Flintstone Kids (From "Los Pequeños Pica Piedra")
 Patito Feo|Las Divinas => Zokai|Las Divinas (From "Patito Feo")
 Violetta|En mi mundo (en vivo) => Martina Stoessel|En Mi Mundo (Live)

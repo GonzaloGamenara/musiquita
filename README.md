@@ -11,7 +11,7 @@ Suena un fragmento de un tema, y gana el que más sabe. Sin build ni dependencia
 - Al final de cada canción se ve la tapa del disco, el nombre, el año y links a YouTube / Apple Music.
 
 ## Catálogo
-Más de 1400 canciones en 30 géneros (rock nacional, cumbia y cuarteto, trap argentino, pop argentino, reggaetón y latino, pop 2000s y actual, hits de la infancia, cine y Disney, hip hop, baladas, salsa, indie, metal, K-pop, openings de anime, Navidad, clásicos 60-70, reggae, folklore y tango, mundial y cancha, electrónica, **openings y temas de series en español latino** e **intros de series y películas**…).
+Más de 1400 canciones en 30 géneros (rock nacional, cumbia y cuarteto, trap argentino, pop argentino, reggaetón y latino, pop 2000s y actual, hits de la infancia, cine y Disney, hip hop, baladas, salsa, indie, metal, K-pop, openings de anime, Navidad, clásicos 60-70, reggae, folklore y tango, mundial y cancha, electrónica, **openings de anime en su versión original (japonés)**, **dibujos y Disney en español** e **intros de series y películas**…).
 Desde la app se pueden activar/desactivar géneros, sacar temas puntuales y crear **playlists propias** (`Artista|Canción`, una por línea).
 
 En `tools/data.full.js` una canción puede escribirse como `Mostrar Artista|Mostrar Título => Artista en iTunes|Título en iTunes` para mostrar un nombre lindo (ej.: `Sailor Moon|Luz de Luna (Opening latino) => Salomé Anjarí|Moonlight Densetsu (…)`) y buscar en iTunes la versión exacta.

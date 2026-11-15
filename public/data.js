@@ -120,7 +120,6 @@ Vilma Palma e Vampiros|Auto Rojo
 Illya Kuryaki and the Valderramas|Abarajame
 Illya Kuryaki and the Valderramas|Jaguar
 Las Pelotas|Sueños
-Rata Blanca|La Leyenda del Hada y el Mago
 Rata Blanca|Mujer Amante
 Cuarteto de Nos|Ya No Sé Qué Hacer Conmigo
 Cuarteto de Nos|Yendo a la Casa de Damián
@@ -282,7 +281,6 @@ Blink-182|I Miss You
 Evanescence|Bring Me to Life
 System of a Down|Chop Suey!
 System of a Down|Toxicity
-Radiohead|Creep
 Twenty One Pilots|Stressed Out
 Twenty One Pilots|Heathens
 Fall Out Boy|Sugar, We're Goin Down
@@ -363,7 +361,6 @@ Tan Biónica|Ciudad Mágica
 Tan Biónica|Obsesionario
 Tan Biónica|La Melodía de Dios
 Sandro|Rosa Rosa
-Sandro|Dame Fuego
 Sandro|Quiero Llenarme de Ti
 Palito Ortega|La Felicidad
 Leonardo Favio|Fuiste Mía un Verano
@@ -385,10 +382,8 @@ Paulo Londra|Tal Vez
 Paulo Londra|Solo Pienso en Ti
 Paulo Londra|Plan A
 Paulo Londra|Forever Alone
-Trueno|Dance Crip
 Trueno|Mamichula
 Trueno|Bien o Mal
-Wos|Canguro
 Wos|Arrancármelo
 Tiago PZK|Entre Nosotros
 Los Pericos|Sin Cadenas
@@ -417,11 +412,9 @@ Maluma|Hawái
 Maluma|Corazón
 Maluma|11 PM
 Ozuna|Baila Baila Baila
-Ozuna|Taki Taki
 Becky G|Mayores
 Becky G|Sin Pijama
 Quevedo|Columbia
-Myke Towers|Lala
 Nicky Jam|El Perdón
 Nicky Jam|X
 Romeo Santos|Propuesta Indecente
@@ -445,7 +438,6 @@ Rosalía|Con Altura
 Don Omar|Danza Kuduro
 Pitbull|Give Me Everything
 Pitbull|Timber
-Natti Natasha|Criminal
 Becky G|Shower
 Lunay|Soltera
 Zion & Lennox|Yo Voy
@@ -602,7 +594,6 @@ Taylor Swift|Cruel Summer
 Taylor Swift|Lover
 Camila Cabello|Havana
 Camila Cabello|Señorita
-Charlie Puth|See You Again
 Charlie Puth|Attention
 Tones and I|Dance Monkey
 Lil Nas X|Old Town Road
@@ -674,7 +665,6 @@ Chiquititas|Chiquititas|Chiquititas
 
   add("cine", "🎬", "Cine, series y Disney", `
 Idina Menzel|Let It Go|Frozen
-Auliʻi Cravalho|How Far I'll Go|Moana
 Randy Newman|You've Got a Friend in Me|Toy Story
 Elton John|Can You Feel the Love Tonight|El Rey León
 Elton John|Circle of Life|El Rey León
@@ -797,7 +787,6 @@ Guns N' Roses|Sweet Child O' Mine
   add("folklore", "🪕", "Folklore y tango", `
 Mercedes Sosa|Gracias a la Vida
 Mercedes Sosa|Solo le Pido a Dios
-Mercedes Sosa|Todo Cambia
 Mercedes Sosa|Alfonsina y el Mar
 Carlos Gardel|Volver
 Carlos Gardel|Mi Buenos Aires Querido
@@ -947,7 +936,6 @@ Megan Thee Stallion|Savage
 Post Malone|Congratulations
 Migos|Bad and Boujee
 Lil Uzi Vert|XO Tour Llif3
-XXXTENTACION|SAD!
 Juice WRLD|Lucid Dreams
 Travis Scott|goosebumps
 21 Savage|a lot
@@ -961,7 +949,6 @@ Childish Gambino|This Is America
 Eminem|Stan
 Eminem|Mockingbird
 Eminem|The Real Slim Shady
-Beyoncé|Formation
 Rihanna|Work
 `);
 
@@ -984,7 +971,6 @@ Ricardo Montaner|La Cima del Cielo
 Alejandro Fernández|Me Dediqué a Perderte
 Alejandro Fernández|Hoy Tengo Ganas de Ti
 Marco Antonio Solís|Si No Te Hubieras Ido
-Marco Antonio Solís|Tu Cárcel
 Roberto Carlos|Amigo
 Roberto Carlos|Detalles
 Roberto Carlos|Cama y Mesa
@@ -1146,8 +1132,6 @@ Papa Roach|Last Resort
 Korn|Blind
 Korn|Freak on a Leash
 Sepultura|Roots Bloody Roots
-Sepultura|Refuse/Resist
-Rata Blanca|La Leyenda del Hada y el Mago
 V8|Destrucción
 Metallica|Fuel
 Metallica|The Unforgiven
@@ -1216,8 +1200,10 @@ Jenni Rivera|Ya Lo Sé
 Jenni Rivera|La Gran Señora
 `);
 
-  add("anime-op", "🍥", "Openings de anime y juegos", `
+  add("anime-op", "🍥", "Openings de anime y juegos (originales)", `
 Hironobu Kageyama|Cha-La Head-Cha-La|Dragon Ball Z
+Hiroshi Kitadani|We Are!|One Piece
+Ikimono-gakari|Blue Bird|Naruto Shippuden
 Linked Horizon|Guren no Yumiya|Ataque a los Titanes
 LiSA|Gurenge|Demon Slayer
 LiSA|Crossing Field|Sword Art Online
@@ -1242,13 +1228,65 @@ Eve|Kaikai Kitan|Jujutsu Kaisen
 JAM Project|The Hero!!|One Punch Man
 Masatoshi Ono|Departure!|Hunter x Hunter
 Yoko Takahashi|A Cruel Angel's Thesis|Neon Genesis Evangelion
+The Seatbelts|Tank!|Cowboy Bebop
 Crush 40|Live & Learn|Sonic Adventure 2
 Crush 40|Sonic Heroes|Sonic Heroes (videojuego)
-Ayumi Miyazaki|Brave Heart|Digimon
 Mrs. GREEN APPLE|Inferno|Fire Force
 King Gnu|Hakujitsu
 Creepy Nuts|Bling-Bang-Bang-Born|Mashle
 Fujii Kaze|Shinunoga E-Wa
+Hironobu Kageyama|We Gotta Power|Dragon Ball Z
+Hiroki Takahashi|Makafushigi Adventure!|Dragon Ball
+Takayoshi Tanimoto|Dragon Soul|Dragon Ball Z Kai
+Kazuya Yoshii|Chozetsu Dynamic!|Dragon Ball Super
+Kiyoshi Hikawa|Limit-Break x Survivor|Dragon Ball Super
+The Babystars|Hikari e|One Piece
+Hiroshi Kitadani|We Go!|One Piece
+Ado|New Genesis|One Piece Film Red
+7!!|Lovers|Naruto Shippuden
+NICO Touches the Walls|Diver|Naruto Shippuden
+Ikimono-gakari|Hotaru no Hikari|Naruto Shippuden
+Joe Inoue|Closer|Naruto
+High and Mighty Color|Ichirin no Hana|Bleach
+UVERworld|D-tecnoLife|Bleach
+YUI|Rolling star|Bleach
+ASIAN KUNG-FU GENERATION|Rewrite|Fullmetal Alchemist
+Porno Graffitti|Melissa|Fullmetal Alchemist
+Nightmare|The World|Death Note
+Maximum the Hormone|Zetsubou Billy|Death Note
+Linked Horizon|Shinzo wo Sasageyo!|Ataque a los Titanes
+Linked Horizon|Jiyuu no Tsubasa|Ataque a los Titanes
+SiM|The Rumbling|Ataque a los Titanes
+LiSA|Akeboshi|Demon Slayer
+LiSA|Homura|Demon Slayer: Mugen Train
+King Gnu|SPECIALZ|Jujutsu Kaisen
+Porno Graffitti|The Day|My Hero Academia
+Kenshi Yonezu|Peace Sign|My Hero Academia
+Eir Aoi|Innocence|Sword Art Online
+SPYAIR|Imagination|Haikyu!!
+FUNKIST|Snow Fairy|Fairy Tail
+Vickeblanka|Black Catcher|Black Clover
+MOB CHOIR|99|Mob Psycho 100
+Rika Matsumoto|Mezase Pokémon Master|Pokémon
+Koji Wada|Butter-Fly|Digimon Adventure
+Koji Wada|Fire!!|Digimon Frontier
+Koji Wada|The Biggest Dreamer|Digimon Tamers
+Gumi|Catch You Catch Me|Sakura Card Captors
+Maaya Sakamoto|Platinum|Sakura Card Captors
+V6|Change the World|Inuyasha
+Every Little Thing|Grip!|Inuyasha
+Do As Infinity|Fukai Mori|Inuyasha
+Dream|My Will|Inuyasha
+JUDY AND MARY|Sobakasu|Samurai X
+T.M.Revolution|Heart of Sword ~Yoake Mae~|Samurai X
+Matsuko Mawatari|Hohoemi no Bakudan|Yu Yu Hakusho
+BAAD|Kimi ga Suki da to Sakebitai|Slam Dunk
+Kumiko Osugi|Doraemon no Uta|Doraemon
+Dave Rodgers|Deja Vu|Initial D
+Dave Rodgers|Running in the 90's|Initial D
+Ichiro Mizuki|Mazinger Z|Mazinger Z
+Mitsuko Horie|Candy Candy|Candy Candy
+Megumi Hayashibara|Over Soul|Shaman King
 `);
 
   add("navidad", "🎄", "Navidad y fiestas", `
@@ -1437,43 +1475,12 @@ Maná|Eres Mi Religión
 Sin Bandera|Mientes Tan Bien
 `);
 
-  add("intros-es", "📺", "Openings y temas en español latino", `
-Dragon Ball Z|Cha-La Head-Cha-La (Opening latino)
-Dragon Ball Z|Ángeles Fuimos (Ending latino)
-Dragon Ball Super|Limit Break X Survivor (Opening latino)
-Dragon Ball GT|Mi Corazón Encantado (Opening latino)
-Dragon Ball GT|Opening latino
-One Piece|El Sake de Binks (Opening latino)
-Los Caballeros del Zodiaco|Pegasus Fantasy (Opening latino)
-Los Caballeros del Zodiaco|Pegasus Fantasy (Cover latino)
-Supercampeones|Moete Hero (Opening latino)
-Pokémon|Tengo que ser un maestro Pokémon
-Digimon|Butterfly (Opening latino)
-Digimon Frontier|Fire! (Opening)
-Sailor Moon|Luz de Luna (Opening latino)
-Naruto|Haruka Kanata (Opening latino)
-Naruto Shippuden|Silhouette (Opening latino)
-Naruto Shippuden|Blue Bird (Opening latino)
-Naruto Shippuden|Lovers (Opening latino)
-Inuyasha|Owarinai Yume (Opening latino)
-Inuyasha|Grip! (Opening latino)
-Samurai X|Sobakasu (Opening latino)
-Samurai X|Cuando las Lágrimas
-Beyblade|Let It Rip! (Opening latino)
-Beyblade|Let's Beyblade! (Opening latino)
-Candy Candy|Tema de apertura
-Sakura Card Captors|Yo Te Atrapo, Tú Me Atrapas (Opening latino)
-Sakura Card Captors|Groovy (Ending latino)
-Hunter x Hunter|Ohayou (Opening latino)
-Shaman King|Over Soul (Opening latino)
-Mazinger Z|Opening latino
+  add("intros-es", "📺", "Dibujos, Disney y series en español", `
 Los Padrinos Mágicos|Mientras Vueles Conmigo
 Las Chicas Superpoderosas|Tema final
 Bob Esponja|Canción inicial
 Los Pitufos|Somos los Pitufos
-La Abeja Maya|En un país multicolor
 Los Picapiedra|Tema (Los Pequeños Picapiedra)
-Patito Feo|Las Divinas
 Violetta|En mi mundo (en vivo)
 Frozen|Libre soy
 Frozen|Libre soy (versión Violetta)

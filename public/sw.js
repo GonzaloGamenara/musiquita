@@ -1,7 +1,7 @@
 /* Service worker de Musiquita: la app queda disponible sin internet.
    Estrategia: cache primero + actualización en segundo plano (stale-while-revalidate).
    Subí VERSION cuando cambies archivos para forzar la actualización del caché. */
-const VERSION = 'musiquita-v7';
+const VERSION = 'musiquita-v8';
 const SHELL = [
   './', 'index.html', 'styles.css', 'app.js', 'data.js', 'resolve.js', 'resolved.json', 'manifest.webmanifest',
   'icons/icon-192.png', 'icons/icon-512.png', 'icons/apple-touch-icon.png', 'icons/icon.svg'
