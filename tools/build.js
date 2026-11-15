@@ -27,19 +27,19 @@ full.forEach(c => {
 
 const body = cats.map(c =>
   `  add(${JSON.stringify(c.id)}, ${JSON.stringify(c.emoji)}, ${JSON.stringify(c.name)}, \`\n` +
-  c.items.map(i => `${i.a}|${i.t}`).join('\n') + '\n`);\n').join('\n');
+  c.items.map(i => `${i.a}|${i.t}${i.o ? '|' + i.o : ''}`).join('\n') + '\n`);\n').join('\n');
 
 const out = `/* Catálogo de Musiquita (GENERADO por tools/build.js — no editar a mano).
    Para agregar canciones: editá tools/data.full.js, corré tools/validate.js y después tools/build.js.
-   Una canción por línea:  Artista|Canción  */
+   Una canción por línea:  Artista|Canción|Origen (el origen es opcional)  */
 (function () {
   const R = [];
   const add = (id, emoji, name, text) =>
     R.push({
       id, emoji, name,
       items: text.trim().split('\\n').map(l => l.trim()).filter(Boolean).map(l => {
-        const [a, ...t] = l.split('|');
-        return { a: a.trim(), t: t.join('|').trim() };
+        const [a, t, ...o] = l.split('|');
+        return { a: a.trim(), t: (t || '').trim(), o: o.join('|').trim() };
       })
     });
 

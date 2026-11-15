@@ -10,8 +10,9 @@
       items: text.trim().split('\n').map(l => l.trim()).filter(Boolean).map(l => {
         // "Mostrar Artista|Mostrar Título => Artista en iTunes|Título en iTunes"  (la parte de la derecha es opcional)
         const [disp, target] = l.split(' => ');
-        const [a, ...t] = disp.split('|');
-        const it = { a: a.trim(), t: t.join('|').trim() };
+        const [a, t, ...o] = disp.split('|');
+        const it = { a: a.trim(), t: (t || '').trim() };
+        if (o.join('|').trim()) it.o = o.join('|').trim();
         if (target) { const [ta, ...tt] = target.split('|'); it.ta = ta.trim(); it.tt = tt.join('|').trim(); }
         return it;
       })
@@ -226,7 +227,7 @@ Enrique Iglesias|Súbeme la Radio
 Gloria Estefan|Conga
 Gloria Estefan|Hoy
 Ricky Martin|Livin' la Vida Loca
-Ricky Martin|La Copa de la Vida
+Ricky Martin|La Copa de la Vida|Mundial Francia 1998
 Ricky Martin|María
 Ricky Martin|Vente Pa' Ca
 Shakira|Estoy Aquí
@@ -304,7 +305,7 @@ Pink Floyd|Comfortably Numb
 Bon Jovi|It's My Life
 Bon Jovi|Livin' on a Prayer
 Bon Jovi|Always
-Aerosmith|I Don't Want to Miss a Thing
+Aerosmith|I Don't Want to Miss a Thing|Armageddon
 Aerosmith|Dream On
 Aerosmith|Crazy
 Eagles|Hotel California
@@ -549,7 +550,7 @@ Prince Royce|Corazón Sin Cara
 Marc Anthony|Vivir Mi Vida
 Marc Anthony|Valió la Pena
 Shakira|Hips Don't Lie
-Shakira|Waka Waka (This Time for Africa)
+Shakira|Waka Waka (This Time for Africa)|Mundial 2010
 Shakira|Loca
 Shakira|Chantaje
 Shakira|Whenever, Wherever
@@ -602,7 +603,7 @@ Black Eyed Peas|Boom Boom Pow
 Black Eyed Peas|Don't Phunk with My Heart
 Justin Timberlake|SexyBack
 Justin Timberlake|Cry Me a River
-Justin Timberlake|Can't Stop the Feeling!
+Justin Timberlake|Can't Stop the Feeling!|Trolls
 Usher|Yeah!
 Usher|OMG
 P!nk|Just Give Me a Reason
@@ -649,7 +650,7 @@ Shawn Mendes|Treat You Better
 Justin Bieber|Baby
 Justin Bieber|Sorry
 Justin Bieber|Love Yourself
-Eminem|Lose Yourself
+Eminem|Lose Yourself|8 Millas
 Eminem|Without Me
 Eminem|Love the Way You Lie
 Nelly Furtado|Promiscuous
@@ -756,22 +757,22 @@ Gigi Perez|Sailor Song
 `);
 
   add('peques', '🧒', 'Hits de la infancia', `
-Miley Cyrus|Best of Both Worlds
-Hannah Montana|Nobody's Perfect
-Miley Cyrus|The Climb
-High School Musical Cast|Breaking Free
-High School Musical Cast|We're All in This Together
-High School Musical Cast|Get'cha Head in the Game
-High School Musical Cast|What Time Is It?
-Camp Rock Cast|This Is Me
-Camp Rock Cast|We Rock
+Miley Cyrus|Best of Both Worlds|Hannah Montana
+Hannah Montana|Nobody's Perfect|Hannah Montana
+Miley Cyrus|The Climb|Hannah Montana: La película
+High School Musical Cast|Breaking Free|High School Musical
+High School Musical Cast|We're All in This Together|High School Musical
+High School Musical Cast|Get'cha Head in the Game|High School Musical
+High School Musical Cast|What Time Is It?|High School Musical 2
+Camp Rock Cast|This Is Me|Camp Rock
+Camp Rock Cast|We Rock|Camp Rock
 Demi Lovato|Get Back
-Violetta|En Mi Mundo
-Violetta|Te Creo
-Violetta|Ser Mejor
-Violetta|Podemos
-Violetta|Tienes el Talento
-RBD|Rebelde
+Violetta|En Mi Mundo|Violetta
+Violetta|Te Creo|Violetta
+Violetta|Ser Mejor|Violetta
+Violetta|Podemos|Violetta
+Violetta|Tienes el Talento|Violetta
+RBD|Rebelde|Rebelde
 RBD|Tras de Mí
 RBD|Solo Quédate en Silencio
 RBD|Nuestro Amor
@@ -809,65 +810,65 @@ Jesse & Joy|Corre
 Tan Biónica|Ciudad Mágica
 Los Wachiturros|La Moto Wachiturra
 Los Wachiturros|Los Pibes del Barrio
-Floricienta|Corazón Valiente
-Patito Feo|Aliados
+Floricienta|Corazón Valiente|Floricienta
+Patito Feo|Aliados|Patito Feo
 Patito Feo|Si Yo Fuera Un Pajarito
-Chiquititas|Chiquititas
+Chiquititas|Chiquititas|Chiquititas
 Disney Channel|Un Mundo Ideal
 `);
 
   add('cine', '🎬', 'Cine, series y Disney', `
-Idina Menzel|Let It Go
-Auliʻi Cravalho|How Far I'll Go
-Randy Newman|You've Got a Friend in Me
-Elton John|Can You Feel the Love Tonight
-Elton John|Circle of Life
-Phil Collins|You'll Be in My Heart
-Phil Collins|Two Worlds
-Celine Dion|My Heart Will Go On
-Celine Dion|Beauty and the Beast
-Whitney Houston|I Will Always Love You
-Survivor|Eye of the Tiger
-Ray Parker Jr.|Ghostbusters
-Lady Gaga|Shallow
-Bryan Adams|(Everything I Do) I Do It for You
-Kenny Loggins|Danger Zone
-Berlin|Take My Breath Away
-Adele|Skyfall
-Billie Eilish|No Time to Die
-Wiz Khalifa|See You Again
-Dua Lipa|Dance The Night
-Miguel|Remember Me
-Encanto Cast|We Don't Talk About Bruno
-Encanto Cast|Surface Pressure
-Jon Batiste|It's All Right
-Sebastian Yatra|Dos Oruguitas
+Idina Menzel|Let It Go|Frozen
+Auliʻi Cravalho|How Far I'll Go|Moana
+Randy Newman|You've Got a Friend in Me|Toy Story
+Elton John|Can You Feel the Love Tonight|El Rey León
+Elton John|Circle of Life|El Rey León
+Phil Collins|You'll Be in My Heart|Tarzán
+Phil Collins|Two Worlds|Tarzán
+Celine Dion|My Heart Will Go On|Titanic
+Celine Dion|Beauty and the Beast|La Bella y la Bestia
+Whitney Houston|I Will Always Love You|El Guardaespaldas
+Survivor|Eye of the Tiger|Rocky III
+Ray Parker Jr.|Ghostbusters|Los Cazafantasmas
+Lady Gaga|Shallow|Nace una estrella
+Bryan Adams|(Everything I Do) I Do It for You|Robin Hood: Príncipe de los ladrones
+Kenny Loggins|Danger Zone|Top Gun
+Berlin|Take My Breath Away|Top Gun
+Adele|Skyfall|James Bond: Skyfall
+Billie Eilish|No Time to Die|James Bond: Sin tiempo para morir
+Wiz Khalifa|See You Again|Rápidos y Furiosos 7
+Dua Lipa|Dance The Night|Barbie
+Miguel|Remember Me|Coco
+Encanto Cast|We Don't Talk About Bruno|Encanto
+Encanto Cast|Surface Pressure|Encanto
+Jon Batiste|It's All Right|Soul
+Sebastian Yatra|Dos Oruguitas|Encanto
 Daniel Powter|Bad Day
-Louis Armstrong|What a Wonderful World
-Aerosmith|I Don't Want to Miss a Thing
+Louis Armstrong|What a Wonderful World|Buenos días, Vietnam
+Aerosmith|I Don't Want to Miss a Thing|Armageddon
 Vanessa Carlton|A Thousand Miles
-Shakira|Try Everything
-Sia|Never Give Up
-Pharrell Williams|Happy
-Justin Timberlake|Can't Stop the Feeling!
-Ariana Grande|Beauty and the Beast
-Kristen Bell|For the First Time in Forever
-Jonathan Groff|Reindeer(s) Are Better Than People
-Tim Curry|Sweet Transvestite
+Shakira|Try Everything|Zootrópolis
+Sia|Never Give Up|Lion
+Pharrell Williams|Happy|Mi Villano Favorito 2
+Justin Timberlake|Can't Stop the Feeling!|Trolls
+Ariana Grande|Beauty and the Beast|La Bella y la Bestia (2017)
+Kristen Bell|For the First Time in Forever|Frozen
+Jonathan Groff|Reindeer(s) Are Better Than People|Frozen
+Tim Curry|Sweet Transvestite|The Rocky Horror Picture Show
 Tom Cruise|Danger Zone
-Bill Medley|(I've Had) The Time of My Life
-Starship|Nothing's Gonna Stop Us Now
-Hans Zimmer|Time
-Hans Zimmer|He's a Pirate
-John Williams|Imperial March
-John Williams|Hedwig's Theme
-Ennio Morricone|The Good, the Bad and the Ugly
+Bill Medley|(I've Had) The Time of My Life|Dirty Dancing
+Starship|Nothing's Gonna Stop Us Now|Mannequin
+Hans Zimmer|Time|Inception
+Hans Zimmer|He's a Pirate|Piratas del Caribe
+John Williams|Imperial March|Star Wars
+John Williams|Hedwig's Theme|Harry Potter
+Ennio Morricone|The Good, the Bad and the Ugly|El bueno, el malo y el feo
 The Black Eyed Peas|Pump It
-Eminem|Lose Yourself
+Eminem|Lose Yourself|8 Millas
 Queen|Bohemian Rhapsody
 Los Del Río|Macarena
 Gloria Gaynor|I Will Survive
-Bee Gees|Stayin' Alive
+Bee Gees|Stayin' Alive|Fiebre del sábado por la noche
 `);
 
   add('retro', '🕺', 'Hits de los 80 y 90', `
@@ -993,19 +994,19 @@ Las Voces de Orán|Fruta Dulce
 `);
 
   add('mundial', '🏟️', 'Mundial y cancha', `
-La Mosca|Muchachos, Ahora Nos Volvimos a Ilusionar
-Shakira|Waka Waka (This Time for Africa)
-K'naan|Wavin' Flag
-Ricky Martin|La Copa de la Vida
+La Mosca|Muchachos, Ahora Nos Volvimos a Ilusionar|Mundial 2022 · Argentina campeón
+Shakira|Waka Waka (This Time for Africa)|Mundial 2010
+K'naan|Wavin' Flag|Mundial 2010
+Ricky Martin|La Copa de la Vida|Mundial Francia 1998
 Queen|We Are the Champions
 Queen|We Will Rock You
 The White Stripes|Seven Nation Army
-Pitbull|We Are One (Ole Ola)
+Pitbull|We Are One (Ole Ola)|Mundial 2014
 Jennifer Lopez|On the Floor
-Nicky Jam|Live It Up
-Trinidad Cardona|Hayya Hayya (Better Together)
-Ozuna|Arhbo
-Nicki Minaj|Tukoh Taka
+Nicky Jam|Live It Up|Mundial 2018
+Trinidad Cardona|Hayya Hayya (Better Together)|Mundial 2022
+Ozuna|Arhbo|Mundial 2022
+Nicki Minaj|Tukoh Taka|Mundial 2022
 Charly García|Maradona Blues
 Rodrigo|La Mano de Dios
 Los Fabulosos Cadillacs|Vasos Vacíos
@@ -1413,42 +1414,42 @@ Jenni Rivera|La Gran Señora
 `);
 
   add('anime-op', '🍥', 'Openings de anime y juegos', `
-Hironobu Kageyama|Cha-La Head-Cha-La
-Hiroshi Kitadani|We Are!
-Ikimono-gakari|Blue Bird
-Linked Horizon|Guren no Yumiya
-LiSA|Gurenge
-LiSA|Crossing Field
-YUI|Again
-KANA-BOON|Silhouette
-TK from Ling tosite sigure|Unravel
+Hironobu Kageyama|Cha-La Head-Cha-La|Dragon Ball Z
+Hiroshi Kitadani|We Are!|One Piece
+Ikimono-gakari|Blue Bird|Naruto Shippuden
+Linked Horizon|Guren no Yumiya|Ataque a los Titanes
+LiSA|Gurenge|Demon Slayer
+LiSA|Crossing Field|Sword Art Online
+YUI|Again|Fullmetal Alchemist: Brotherhood
+KANA-BOON|Silhouette|Naruto Shippuden
+TK from Ling tosite sigure|Unravel|Tokyo Ghoul
 YOASOBI|Yoru ni Kakeru
-YOASOBI|Idol
+YOASOBI|Idol|Oshi no Ko
 Ado|Usseewa
-Kenshi Yonezu|Lemon
-Kenshi Yonezu|KICK BACK
+Kenshi Yonezu|Lemon|Drama “Unnatural”
+Kenshi Yonezu|KICK BACK|Chainsaw Man
 Official HIGE DANdism|Pretender
-Official HIGE DANdism|Mixed Nuts
-Aimer|Zankyosanka
-MAN WITH A MISSION|Database
-MAKE-UP|Pegasus Fantasy
-ASIAN KUNG-FU GENERATION|Haruka Kanata
-FLOW|GO!!!
-FLOW|Sign
-ORANGE RANGE|Asterisk
-Eve|Kaikai Kitan
-JAM Project|The Hero!!
-Masatoshi Ono|Departure!
-Hiroaki Tommy Tominaga|Sono Chi no Sadame
-Yoko Takahashi|A Cruel Angel's Thesis
-The Seatbelts|Tank!
-Crush 40|Live & Learn
-Crush 40|Sonic Heroes
-Dalí|Moonlight Densetsu
-Ayumi Miyazaki|Brave Heart
-Mrs. GREEN APPLE|Inferno
+Official HIGE DANdism|Mixed Nuts|Spy x Family
+Aimer|Zankyosanka|Demon Slayer
+MAN WITH A MISSION|Database|Log Horizon
+MAKE-UP|Pegasus Fantasy|Los Caballeros del Zodíaco
+ASIAN KUNG-FU GENERATION|Haruka Kanata|Naruto
+FLOW|GO!!!|Naruto
+FLOW|Sign|Naruto Shippuden
+ORANGE RANGE|Asterisk|Bleach
+Eve|Kaikai Kitan|Jujutsu Kaisen
+JAM Project|The Hero!!|One Punch Man
+Masatoshi Ono|Departure!|Hunter x Hunter
+Hiroaki Tommy Tominaga|Sono Chi no Sadame|JoJo's Bizarre Adventure
+Yoko Takahashi|A Cruel Angel's Thesis|Neon Genesis Evangelion
+The Seatbelts|Tank!|Cowboy Bebop
+Crush 40|Live & Learn|Sonic Adventure 2
+Crush 40|Sonic Heroes|Sonic Heroes (videojuego)
+Dalí|Moonlight Densetsu|Sailor Moon
+Ayumi Miyazaki|Brave Heart|Digimon
+Mrs. GREEN APPLE|Inferno|Fire Force
 King Gnu|Hakujitsu
-Creepy Nuts|Bling-Bang-Bang-Born
+Creepy Nuts|Bling-Bang-Bang-Born|Mashle
 Fujii Kaze|Shinunoga E-Wa
 `);
 

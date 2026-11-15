@@ -56,8 +56,8 @@
 
   /* ---------------------------- catálogo ---------------------------- */
   const parseItems = txt => String(txt).split('\n').map(l => l.trim()).filter(Boolean).map(l => {
-    const [a, ...t] = l.split('|');
-    return { a: a.trim(), t: t.join('|').trim() };
+    const [a, t, ...o] = l.split('|');   // Artista|Canción|Origen (el origen es opcional)
+    return { a: a.trim(), t: (t || '').trim(), o: o.join('|').trim() };
   }).filter(x => x.a && x.t);
   const allCats = () => CATS.concat(S.custom.map(c => ({ id: c.id, emoji: c.emoji || '⭐', name: c.name, custom: true, items: parseItems(c.text) })));
   const ikey = (cid, it) => cid + '|' + it.a + '|' + it.t;
@@ -768,6 +768,7 @@
         <div class="art" id="art">${res.i ? `<img src="${esc(res.i)}" alt="" onerror="this.remove()">` : '🎵'}</div>
         <h1 class="g-name rvt">${esc(s.t)}</h1>
         <div class="g-origin">${esc(s.a)}</div>
+        ${s.o ? `<div class="from">🎬 De: ${esc(s.o)}</div>` : ''}
         <div class="g-sub" style="font-size:14px">${res.y ? `${res.y} · ` : ''}${esc(r.emoji)} ${esc(r.cat)}</div>
         <div class="rvmsg ${who ? 'win' : ''}">${msg}</div>
         ${optsRes}
@@ -784,7 +785,7 @@
         const hit = G.rounds.filter(r => r.winner === 0).length;
         return `${head('¡Terminó!')}
         <div class="final"><div class="trophy">${hit >= n * .7 ? '🏆' : '🎧'}</div><div class="winner">${hit} de ${n}</div><div class="sub">${hit >= n * .8 ? '¡Tenés oído de DJ!' : hit >= n * .5 ? 'Nada mal, ¡seguí así!' : 'Hay que escuchar más música 😄'}${G.best > 1 ? ` · mejor racha ${G.best} 🔥` : ''}</div>
-          <div class="recap">${G.rounds.map(r => `<div class="rr"><em>${r.winner === 0 ? '✅' : '❌'}</em><div>${esc(r.song.t)}<small>${esc(r.song.a)}</small></div></div>`).join('')}</div></div>
+          <div class="recap">${G.rounds.map(r => `<div class="rr"><em>${r.winner === 0 ? '✅' : '❌'}</em><div>${esc(r.song.t)}<small>${esc(r.song.a)}${r.song.o ? ` · ${esc(r.song.o)}` : ''}</small></div></div>`).join('')}</div></div>
         <div class="final-actions"><div class="row2"><button class="btn" data-a="g-again">🔁 Otra vuelta</button><button class="btn blue" data-a="g-share">📤 Compartir</button></div><button class="btn ghost" data-a="g-exit">Volver al inicio</button></div>`;
       }
       const order = rankOrder(), top = order[0] ? order[0].s : 0, max = Math.max(1, top);
@@ -796,7 +797,7 @@
       <div class="final"><canvas id="confetti"></canvas>
         <div class="trophy">${winners.length ? '🏆' : '🤷'}</div><div class="winner">${title}</div><div class="sub">${sub}</div>
         <div class="bars">${order.map(o => `<div class="bar" style="--pc:${PC[o.i % PC.length]}"><div class="m">${medals[o.pos - 1] || o.pos}</div><div><div class="nm">${esc(o.p)}</div><div class="track"><i style="width:${o.s / max * 100}%"></i></div></div><div class="pp">${o.s}</div></div>`).join('')}</div>
-        <div class="recap">${G.rounds.map(r => `<div class="rr"><em>${esc(r.emoji)}</em><div>${esc(r.song.t)}<small>${esc(r.song.a)}</small></div>${r.winner != null && r.winner >= 0 ? `<span style="--pc:${PC[r.winner % PC.length]}"><i></i>${esc(G.players[r.winner])}</span>` : '<span>—</span>'}</div>`).join('')}</div>
+        <div class="recap">${G.rounds.map(r => `<div class="rr"><em>${esc(r.emoji)}</em><div>${esc(r.song.t)}<small>${esc(r.song.a)}${r.song.o ? ` · ${esc(r.song.o)}` : ''}</small></div>${r.winner != null && r.winner >= 0 ? `<span style="--pc:${PC[r.winner % PC.length]}"><i></i>${esc(G.players[r.winner])}</span>` : '<span>—</span>'}</div>`).join('')}</div>
       </div>
       <div class="final-actions"><div class="row2"><button class="btn" data-a="g-again">🔁 Revancha</button><button class="btn blue" data-a="g-share">📤 Compartir</button></div>
         <button class="btn ghost" data-a="g-exit">Volver al inicio</button></div>`;
@@ -838,7 +839,7 @@
       const last = G.total > 0 && G.rounds.length >= G.total;
       const yt = 'https://www.youtube.com/results?search_query=' + encodeURIComponent(s.a + ' ' + s.t);
       const side = (i, pos) => dSide(i, pos, `<div class="drv"><div class="rvmsg ${who === i ? 'win' : ''}">${r.steal ? (who === i ? `🎯 +1 porque ${dName(r.failer)} falló` : `😬 Fallaste: +1 para ${dName(who)}`) : who === i ? `🎉 ¡Sumaste +${r.pts}!` : who != null ? `${dName(who)} sumó +${r.pts}` : '😅 Nadie la adivinó'}</div>
-          <div class="drvt">${esc(s.t)}</div><div class="drva">${esc(s.a)}</div></div>
+          <div class="drvt">${esc(s.t)}</div><div class="drva">${esc(s.a)}</div>${s.o ? `<div class="from">🎬 De: ${esc(s.o)}</div>` : ''}</div>
           <button class="btn dnext" data-a="g-next">${last ? 'Resultados 🏆' : 'Siguiente ▶'}</button>`);
       return duelWrap(side, `<div class="art" id="art">${res.i ? `<img src="${esc(res.i)}" alt="" onerror="this.remove()">` : '🎵'}</div>
         <div class="g-sub" style="font-size:13px">${res.y ? `${res.y} · ` : ''}${esc(r.emoji)} ${esc(r.cat)}</div>

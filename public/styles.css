@@ -554,3 +554,7 @@ html.sab0 .tabbar { padding-bottom: 2px; }
 .peekbtn.on .pk-on, .peekbtn:active .pk-on { display: block; }
 .dans { gap: 6px; }
 @media (max-height: 700px) { .peekbtn { min-height: 52px; } .drow .jd { padding: 9px 4px; } }
+
+/* de qué anime / película / serie es el tema */
+.from { background: rgba(246, 180, 14, .18); border: 1px solid rgba(246, 180, 14, .5); color: #ffe3a0; font-weight: 800; font-size: 15px; border-radius: 99px; padding: 5px 14px; margin-top: 2px; max-width: 100%; }
+.drv .from { font-size: 13px; padding: 3px 11px; }
