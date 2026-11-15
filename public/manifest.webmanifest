@@ -1,0 +1,39 @@
+{
+  "id": "/",
+  "name": "Musiquita · ¿Qué canción es?",
+  "short_name": "Musiquita",
+  "description": "Adiviná la canción con tus amigos: fragmentos, buzzers, pistas y puntaje.",
+  "lang": "es-AR",
+  "dir": "ltr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0f2747",
+  "theme_color": "#0f2747",
+  "categories": [
+    "games",
+    "music",
+    "entertainment"
+  ],
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
