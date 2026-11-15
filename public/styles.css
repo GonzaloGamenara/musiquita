@@ -479,3 +479,63 @@ html.sab0 .tabbar { padding-bottom: 2px; }
 .rvmain.tight .art { width: min(34vw, 130px); font-size: 40px; border-radius: 18px; }
 .rvmain.tight .rvt { margin-top: 4px; font-size: clamp(22px, 6.5vw, 30px); }
 .rvmain.tight .links { margin-top: 2px; }
+
+/* ======================= MODO 1 vs 1 (cara a cara) ======================= */
+.game.duelmode { padding-top: calc(var(--sat) + 6px); padding-bottom: calc(var(--sab) + 10px); }
+.duel { flex: 1; min-height: 0; display: flex; flex-direction: column; gap: 8px; }
+.dside {
+  flex: 1 1 0; min-height: 0; display: flex; flex-direction: column; gap: 8px; padding: 10px 12px 12px; border-radius: 24px;
+  background: linear-gradient(180deg, color-mix(in srgb, var(--pc) 28%, rgba(255, 255, 255, .04)), color-mix(in srgb, var(--pc) 9%, rgba(255, 255, 255, .03)));
+  border: 1px solid color-mix(in srgb, var(--pc) 50%, transparent);
+}
+.dside.ptop { transform: rotate(180deg); }          /* el jugador de enfrente lo lee al derecho */
+.dhead { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; flex: none; min-height: 30px; }
+.dname { font-weight: 900; font-size: 16px; display: flex; align-items: center; gap: 7px; max-width: 45%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.dname i { width: 12px; height: 12px; border-radius: 50%; background: var(--pc); box-shadow: 0 0 0 3px rgba(255, 255, 255, .22); flex: none; }
+.dscore { background: var(--pc); color: #fff; border-radius: 99px; padding: 1px 11px; font-weight: 900; font-size: 15px; font-variant-numeric: tabular-nums; text-shadow: 0 1px 2px rgba(0, 0, 0, .3); }
+.dh { margin-left: auto; min-height: 0; justify-content: flex-end; gap: 4px; }
+.dh .hchip { padding: 3px 9px; font-size: 12px; }
+
+.dbuzz {
+  flex: 1; min-height: 0; border: 0; cursor: pointer; border-radius: 22px; background: var(--pc); color: #fff; font-weight: 900;
+  font-size: clamp(40px, 13vw, 64px); letter-spacing: -.02em; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px;
+  box-shadow: 0 8px 0 color-mix(in srgb, var(--pc) 55%, #000), 0 14px 28px rgba(0, 0, 0, .3); text-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+  transition: transform .05s, box-shadow .05s; -webkit-user-select: none; user-select: none;
+}
+.dbuzz small { font-size: 13px; font-weight: 800; opacity: .85; letter-spacing: 0; }
+.dbuzz:active { transform: translateY(6px); box-shadow: 0 2px 0 color-mix(in srgb, var(--pc) 55%, #000); }
+.dbuzz.lock { opacity: .3; box-shadow: none; filter: grayscale(.6); font-size: 28px; transform: none; }
+
+.dans { flex: 1; min-height: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 8px; }
+.dans .g-kicker { font-size: 26px; }
+.dq { font-size: 17px; max-width: none; opacity: 1; }
+.drow { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; width: 100%; }
+.drow .jd { align-items: center; text-align: center; padding: 14px 4px; border-radius: 16px; }
+.drow .jd b { font-size: 17px; }
+.drow .jd small { font-size: 12px; }
+
+.dmid { flex: none; display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 0 2px; }
+.dtop { width: 100%; display: flex; align-items: center; justify-content: space-between; }
+.duel .vinyl { --d: 62px; margin: 0; }
+.dmid .cliprog { margin-top: 0; height: 6px; }
+.dmid .cliptxt { min-height: 15px; font-size: 12px; }
+.dmid .g-actions { width: 100%; gap: 8px; }
+.dmid .g-actions .gbtn { padding: 6px 2px; font-size: 12px; }
+.dmid .g-actions .gbtn span { font-size: 17px; }
+.dmid .art { width: 86px; font-size: 34px; border-radius: 16px; }
+.dmid .links { margin-top: 0; align-items: center; }
+
+.drv { flex: 1; min-height: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 4px; }
+.drvt { font-size: clamp(24px, 7vw, 34px); font-weight: 900; line-height: 1.05; text-wrap: balance; overflow-wrap: anywhere; }
+.drva { font-size: 16px; font-weight: 700; opacity: .8; }
+.dnext { flex: none; padding: 11px; font-size: 17px; width: 100%; }
+.dfin { flex: 1; min-height: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+.dfin .trophy { font-size: 50px; }
+.dfin .winner { font-size: clamp(26px, 8.5vw, 38px); margin: 2px 0; }
+.dfin .sub { margin: 0; font-size: 14px; }
+@media (max-height: 700px) {
+  .dside { padding: 8px 10px 10px; gap: 6px; }
+  .dbuzz { font-size: 38px; }
+  .dmid .art { width: 64px; }
+}
+.dname { padding: 3px 3px 3px 4px; }

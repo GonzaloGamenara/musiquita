@@ -282,15 +282,22 @@
       <button class="sw" role="switch" aria-checked="${!!S.settings[k]}" aria-label="${label}" data-a="toggle" data-k="${k}"></button></div>`;
   const initial = n => esc(([...n.trim()][0] || '?').toUpperCase());
 
-  const effMode = () => (S.settings.mode === 'buzzer' && S.players.length >= 2) ? 'buzzer' : 'turns';
+  const effMode = () => {
+    const m = S.settings.mode;
+    if (m === 'duel') return 'duel';
+    return (m === 'buzzer' && S.players.length >= 2) ? 'buzzer' : 'turns';
+  };
+  // en 1 vs 1 juegan los dos primeros; si falta alguien se completa solo ("Jugador 1/2")
+  const duelNames = () => { const n = S.players.slice(0, 2); while (n.length < 2) n.push('Jugador ' + (n.length + 1)); return n; };
 
   function viewPlay() {
     const s = S.settings, n = poolSize(), nc = activeCats().length;
     const np = S.players.length;
-    const hint = np === 0 ? 'Sin jugadores: jugás solo, con 4 opciones por canción.'
-      : (np === 1 && s.mode === 'buzzer') ? 'Con buzzers necesitás 2 o más jugadores. Con uno solo se juega por opciones.'
-        : s.mode === 'buzzer' ? 'Cada uno tiene su buzzer: el primero que toca, responde en voz alta.'
-          : 'Por turnos: a cada uno le toca una canción con 4 opciones.';
+    const hint = s.mode === 'duel' ? (np > 2 ? 'En 1 vs 1 juegan los dos primeros de la lista.' : np < 2 ? 'No hace falta cargar nombres: si no hay, juegan “Jugador 1” y “Jugador 2”.' : 'Apoyen el celu en la mesa entre los dos: cada uno tiene su botón de su lado.')
+      : np === 0 ? 'Sin jugadores: jugás solo, con 4 opciones por canción.'
+        : (np === 1 && s.mode === 'buzzer') ? 'Con buzzers necesitás 2 o más jugadores. Con uno solo se juega por opciones.'
+          : s.mode === 'buzzer' ? 'Cada uno tiene su buzzer: el primero que toca, responde en voz alta.'
+            : 'Por turnos: a cada uno le toca una canción con 4 opciones.';
     const install = (isIOS && !isStandalone() && !S.hideInstall) ? `
       <div class="install"><b>📲 Instalala en tu iPhone</b>
       <p>Tocá <b>Compartir</b> en Safari y elegí <b>“Agregar a pantalla de inicio”</b>. Se abre a pantalla completa.</p>
@@ -308,8 +315,8 @@
     </section>
     <section class="card">
       <div class="card-h"><h2><span class="ico">🎧</span>La partida</h2></div>
-      <div class="row col"><div class="lbl"><b>Modo de juego</b><small>${s.mode === 'buzzer' ? 'El más rápido en tocar su buzzer, responde' : 'Cada uno elige entre 4 opciones'}</small></div>
-        ${seg('mode', [['buzzer', '🔔 Buzzers'], ['turns', '🎯 Por turnos']], s.mode)}</div>
+      <div class="row col"><div class="lbl"><b>Modo de juego</b><small>${{ buzzer: 'Un buzzer por jugador: el más rápido responde', duel: 'Cara a cara: celu en el medio, un botón de cada lado', turns: 'Cada uno elige entre 4 opciones, por turnos' }[s.mode]}</small></div>
+        ${seg('mode', [['buzzer', '🔔 Buzzers'], ['duel', '⚔️ 1 vs 1'], ['turns', '🎯 Turnos']], s.mode)}</div>
       ${stepper('rounds', 'Canciones', 'cuántas rondas', s.rounds === 0 ? '∞' : s.rounds)}
       ${stepper('clipSec', 'Fragmento', 'cuánto suena de cada tema', fmtDur(s.clipSec))}
       <div class="presets">${CLIP_PRESETS.map(v => `<button class="pre ${s.clipSec === v ? 'on' : ''}" data-a="preset" data-k="clipSec" data-v="${v}">${v} s</button>`).join('')}</div>
@@ -325,7 +332,7 @@
 
   function ctaHTML() {
     const s = S.settings, np = S.players.length, n = poolSize();
-    const sum2 = [s.rounds === 0 ? '∞ canciones' : `${s.rounds} canciones`, `${s.clipSec} s`, effMode() === 'buzzer' ? `${np} jugadores` : (np >= 2 ? `${np} por turnos` : 'solo')].join(' · ');
+    const sum2 = [s.rounds === 0 ? '∞ canciones' : `${s.rounds} canciones`, `${s.clipSec} s`, effMode() === 'duel' ? '1 vs 1' : effMode() === 'buzzer' ? `${np} jugadores` : (np >= 2 ? `${np} por turnos` : 'solo')].join(' · ');
     return `<div class="cta-sum">${sum2}</div><button class="btn big" data-a="start" ${n ? '' : 'disabled'}>¡A escuchar! 🎵</button>`;
   }
 
@@ -417,7 +424,7 @@
       <div class="row col"><div class="lbl"><b>Tema</b></div>${seg('theme', [['auto', 'Automático'], ['light', 'Claro'], ['dark', 'Oscuro']], s.theme)}</div>
     </section>
     <section class="card"><div class="card-h"><h2><span class="ico">ℹ️</span>Tips</h2></div>
-      <p class="hint" style="margin-top:0">• Necesitás <b>internet</b> para escuchar los temas (la app abre sin conexión, pero la música no).<br>• Si no suena en el iPhone, fijate que no esté el <b>modo silencio</b> y que el volumen esté arriba.<br>• Para instalarla: Safari → <b>Compartir</b> → <b>Agregar a pantalla de inicio</b>.<br>• Mejor jugar con el cel en el medio de la mesa, ¡y con parlante!</p>
+      <p class="hint" style="margin-top:0">• Necesitás <b>internet</b> para escuchar los temas (la app abre sin conexión, pero la música no).<br>• Si no suena en el iPhone, fijate que no esté el <b>modo silencio</b> y que el volumen esté arriba.<br>• Para instalarla: Safari → <b>Compartir</b> → <b>Agregar a pantalla de inicio</b>.<br>• Mejor jugar con el cel en el medio de la mesa, ¡y con parlante! En <b>1 vs 1</b> cada uno toca el botón de su lado.</p>
     </section>
     <section class="card"><div class="card-h"><h2><span class="ico">🧹</span>Datos</h2></div>
       <button class="btn sm ghost" data-a="reset-all">Restablecer todo</button>
@@ -491,7 +498,7 @@
     unlockAudio(); unlockPlayer();
     const st = { ...S.settings };
     const mode = effMode();
-    const players = S.players.length ? S.players.slice() : ['Vos'];
+    const players = mode === 'duel' ? duelNames() : (S.players.length ? S.players.slice() : ['Vos']);
     G = {
       st, mode, players, scoring: players.length >= 2, rounds: [], phase: 'load', used: new Set(), total: st.rounds,
       to: null, locked: new Set(), buzzer: null, hints: 0, streak: 0, best: 0, token: 0, startedAt: Date.now()
@@ -528,7 +535,7 @@
     G.rounds.push(round);
     const start = G.st.startAt === 'random' ? rand(Math.max(1, PREVIEW_MAX - G.st.clipSec)) : 0;
     G.clipStart = start; G.clipEnd = Math.min(PREVIEW_MAX, start + G.st.clipSec); G.clipDone = false; G.fresh = false;
-    G.phase = G.mode === 'buzzer' ? 'listen' : 'options';
+    G.phase = G.mode === 'turns' ? 'options' : 'listen';
     G.ansEnd = Date.now() + G.st.answerSec * 1000;
     renderGame();
     const ok = await loadAndPlay(p.res.u, start);
@@ -633,15 +640,15 @@
       paintClip();
       if (G.phase === 'options' && !G.timeUp) {
         const left = G.ansEnd - Date.now();
-        const bar = $('#tb'); if (bar) bar.style.width = Math.max(0, left / (G.st.answerSec * 1000) * 100) + '%';
+        $$('[data-tb]').forEach(bar => { bar.style.width = Math.max(0, left / (G.st.answerSec * 1000) * 100) + '%'; });
         const sec = Math.ceil(left / 1000);
         if (sec <= 3 && sec > 0 && G.lastBeep !== sec) { G.lastBeep = sec; sfx.tick(); }
         if (left <= 0) { G.timeUp = true; sfx.end(); const r = curRound(); r.picked = -1; G.streak = 0; reveal(null); G.timeUp = false; }
       }
     } else if (G.phase === 'answer') {
       const left = G.ansEnd - Date.now();
-      const bar = $('#tb'); if (bar) bar.style.width = Math.max(0, left / (G.st.answerSec * 1000) * 100) + '%';
-      const t = $('#tt'); if (t) t.textContent = Math.max(0, Math.ceil(left / 1000));
+      $$('[data-tb]').forEach(bar => { bar.style.width = Math.max(0, left / (G.st.answerSec * 1000) * 100) + '%'; });
+      $$('[data-tt]').forEach(t => { t.textContent = Math.max(0, Math.ceil(left / 1000)); });
       const sec = Math.ceil(left / 1000);
       if (sec <= 3 && sec > 0 && G.lastBeep !== sec) { G.lastBeep = sec; sfx.tick(); vib(20); }
       if (left <= 0) { sfx.end(); judge('bad'); }
@@ -723,8 +730,8 @@
         ${vinyl(false)}
         <div class="g-kicker" style="opacity:.8">Responde…</div>
         <div class="g-title ans" style="color:${PC[i % PC.length]}">${esc(p)}</div>
-        <div class="ansbar"><i id="tb"></i></div>
-        <div class="g-sub"><b id="tt">${G.st.answerSec}</b> seg · artista y canción en voz alta 🎤</div>
+        <div class="ansbar"><i data-tb></i></div>
+        <div class="g-sub"><b data-tt>${G.st.answerSec}</b> seg · artista y canción en voz alta 🎤</div>
       </div>
       <div class="judge">
         <button class="jd ok" data-a="g-judge" data-k="full"><b>✔ ¡Clavó!</b><small>Artista y canción · +2</small></button>
@@ -740,7 +747,7 @@
         ${vinyl(true)}
         ${clipBar()}
         <div class="hints" id="hints">${hintChips()}</div>
-        <div class="ansbar"><i id="tb"></i></div>
+        <div class="ansbar"><i data-tb></i></div>
         <div class="opts">${r.opts.map((o, i) => `<button class="opt" data-a="g-choose" data-i="${i}"><b>${esc(o.t)}</b><small>${esc(o.a)}</small></button>`).join('')}</div>
       </div>
       ${clipActions(`<button class="btn gbtn" data-a="g-reveal"><span>🏳️</span>Pasar</button>`)}`;
@@ -791,6 +798,55 @@
     }
   };
 
+  /* ---------------------- modo cara a cara (1 vs 1) ----------------------
+     El celu se apoya en la mesa entre los dos. Abajo juega el jugador 1; arriba el jugador 2, con su mitad
+     de pantalla girada 180° para que la lea el que está enfrente. En el medio quedan los controles comunes. */
+  const dName = i => esc(G.players[i]);
+  const dHead = i => `<div class="dhead"><span class="dname"><i></i>${dName(i)}</span><b class="dscore">${calcScores()[i]}</b>${(G.phase === 'listen' || G.phase === 'answer') && G.rounds.length ? `<div class="hints dh">${hintChips()}</div>` : ''}</div>`;
+  const dSide = (i, pos, inner) => `<section class="dside ${pos}" style="--pc:${PC[i % PC.length]}">${dHead(i)}${inner}</section>`;
+  const dTopBar = () => `<div class="dtop"><button class="ibtn" data-a="g-quit" aria-label="Salir">✕</button><div class="g-round">${roundLabel()}</div><button class="ibtn" data-a="g-sound" aria-label="Sonido">${S.settings.sound ? '🔊' : '🔇'}</button></div>`;
+  const duelWrap = (side, mid) => `<div class="duel">${side(1, 'ptop')}<div class="dmid">${dTopBar()}${mid}</div>${side(0, 'pbot')}</div>`;
+
+  const DUEL = {
+    listen() {
+      const side = (i, pos) => dSide(i, pos, `<button class="dbuzz ${G.locked.has(i) ? 'lock' : ''}" data-a="g-buzz" data-i="${i}" ${G.locked.has(i) ? 'disabled' : ''}>${G.locked.has(i) ? 'Bloqueado' : '¡YO!'}<small>${G.locked.has(i) ? 'ya fallaste en esta' : 'tocá cuando sepas'}</small></button>`);
+      return duelWrap(side, `${vinyl(true)}${clipBar()}${clipActions(`<button class="btn gbtn" data-a="g-reveal"><span>👁️</span>Revelar</button>`)}`);
+    },
+    answer() {
+      const a = G.buzzer;
+      const side = (i, pos) => i === a
+        ? dSide(i, pos, `<div class="dans"><div class="g-kicker">¡Respondé!</div><div class="ansbar"><i data-tb></i></div><div class="g-sub"><b data-tt>${G.st.answerSec}</b> seg · artista y canción en voz alta 🎤</div></div>`)
+        : dSide(i, pos, `<div class="dans"><div class="g-sub dq">¿Lo dijo bien <b>${dName(a)}</b>?</div>
+            <div class="drow">
+              <button class="jd ok" data-a="g-judge" data-k="full"><b>✔ Clavó</b><small>+2</small></button>
+              <button class="jd mid" data-a="g-judge" data-k="half"><b>½ Casi</b><small>+1</small></button>
+              <button class="jd bad" data-a="g-judge" data-k="bad"><b>✘ Falló</b><small>sigue</small></button>
+            </div></div>`);
+      return duelWrap(side, `${vinyl(false)}<div class="g-sub" style="font-size:14px">Música en pausa ⏸️</div>`);
+    },
+    reveal() {
+      const r = curRound(), s = r.song, res = r.res, who = r.winner != null && r.winner >= 0 ? r.winner : null;
+      const last = G.total > 0 && G.rounds.length >= G.total;
+      const yt = 'https://www.youtube.com/results?search_query=' + encodeURIComponent(s.a + ' ' + s.t);
+      const side = (i, pos) => dSide(i, pos, `<div class="drv"><div class="rvmsg ${who === i ? 'win' : ''}">${who === i ? `🎉 ¡Sumaste +${r.pts}!` : who != null ? `${dName(who)} sumó +${r.pts}` : '😅 Nadie la adivinó'}</div>
+          <div class="drvt">${esc(s.t)}</div><div class="drva">${esc(s.a)}</div></div>
+          <button class="btn dnext" data-a="g-next">${last ? 'Resultados 🏆' : 'Siguiente ▶'}</button>`);
+      return duelWrap(side, `<div class="art" id="art">${res.i ? `<img src="${esc(res.i)}" alt="" onerror="this.remove()">` : '🎵'}</div>
+        <div class="g-sub" style="font-size:13px">${res.y ? `${res.y} · ` : ''}${esc(r.emoji)} ${esc(r.cat)}</div>
+        <div class="links"><button class="btn gbtn" data-a="g-play" style="padding:7px 14px;flex-direction:row"><span id="pp">⏸️</span>Tema</button><a href="${esc(yt)}" target="_blank" rel="noopener">▶ YouTube</a></div>`);
+    },
+    final() {
+      const sc = calcScores(), w = sc[0] === sc[1] ? null : (sc[0] > sc[1] ? 0 : 1);
+      const side = (i, pos) => dSide(i, pos, `<div class="dfin"><div class="trophy">${w === i ? '🏆' : w == null ? '🤝' : '😅'}</div>
+          <div class="winner">${w === i ? '¡Ganaste!' : w == null ? '¡Empate!' : '¡Revancha!'}</div>
+          <div class="sub">${dName(0)} ${sc[0]} — ${sc[1]} ${dName(1)}</div></div>`);
+      return `<canvas id="confetti"></canvas>` + duelWrap(side, `<div class="g-actions" style="grid-template-columns:1fr 1fr 1fr;width:100%">
+          <button class="btn gbtn" data-a="g-again"><span>🔁</span>Revancha</button>
+          <button class="btn gbtn" data-a="g-share"><span>📤</span>Compartir</button>
+          <button class="btn gbtn" data-a="g-exit"><span>🏠</span>Salir</button></div>`);
+    }
+  };
+
   function rankOrder() {
     const sc = calcScores();
     const order = G.players.map((p, i) => ({ p, i, s: sc[i] })).sort((a, b) => b.s - a.s || a.i - b.i);
@@ -803,8 +859,8 @@
     if (!G) return;
     const keep = {};
     ['.final', '.buzz'].forEach(s => { const e = $(s, gameEl); if (e) keep[s] = e.scrollTop; });
-    gameEl.className = 'game ph-' + G.phase;
-    gameEl.innerHTML = GV[G.phase]();
+    gameEl.className = 'game ph-' + G.phase + (G.mode === 'duel' && DUEL[G.phase] ? ' duelmode' : '');
+    gameEl.innerHTML = (G.mode === 'duel' && DUEL[G.phase] ? DUEL[G.phase] : GV[G.phase])();
     Object.keys(keep).forEach(s => { const e = $(s, gameEl); if (e) e.scrollTop = keep[s]; });
     paintClip();
   }

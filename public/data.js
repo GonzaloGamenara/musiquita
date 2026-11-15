@@ -407,29 +407,273 @@ Wisin & Yandel|Estoy Enamorado
 Wisin & Yandel|Sexy Movimiento
 Luis Fonsi|Despacito
 Luis Fonsi|Échame la Culpa
+Bad Bunny|Ojitos Lindos
+J Balvin|Mi Gente
+J Balvin|Ginza
+J Balvin|Ay Vamos
+J Balvin|Safari
+Karol G|Provenza
+Maluma|Felices los 4
+Maluma|Hawái
+Maluma|Corazón
+Maluma|11 PM
+Ozuna|Baila Baila Baila
+Ozuna|Taki Taki
+Becky G|Mayores
+Becky G|Sin Pijama
+Quevedo|Columbia
+Myke Towers|Lala
+Nicky Jam|El Perdón
+Nicky Jam|X
+Romeo Santos|Propuesta Indecente
+Prince Royce|Stand by Me
+Prince Royce|Corazón Sin Cara
+Marc Anthony|Vivir Mi Vida
+Marc Anthony|Valió la Pena
 Shakira|Hips Don't Lie
 Shakira|Waka Waka (This Time for Africa)
 Shakira|Loca
 Shakira|Chantaje
 Shakira|Whenever, Wherever
 Shakira|Bzrp Music Sessions, Vol. 53
+Sebastián Yatra|Traicionera
+Camilo|Vida de Rico
+Anitta|Envolver
+Peso Pluma|Ella Baila Sola
+Grupo Frontera|Un x100to
+Rosalía|Malamente
+Rosalía|Con Altura
 Don Omar|Danza Kuduro
+Pitbull|Give Me Everything
+Pitbull|Timber
+Natti Natasha|Criminal
+Becky G|Shower
+Lunay|Soltera
+Zion & Lennox|Yo Voy
+Plan B|Si No Le Contesto
+Tito El Bambino|El Amor
 `);
 
   add('pop-2000', '💿', 'Pop internacional 2000s y 2010s', `
+Britney Spears|...Baby One More Time
+Britney Spears|Toxic
+Britney Spears|Oops!... I Did It Again
+Britney Spears|Womanizer
+Rihanna|Umbrella
+Rihanna|Diamonds
+Rihanna|We Found Love
+Rihanna|Only Girl (In the World)
+Rihanna|Don't Stop the Music
+Beyoncé|Crazy in Love
+Beyoncé|Single Ladies (Put a Ring on It)
+Beyoncé|Halo
+Beyoncé|Love on Top
+Katy Perry|Firework
+Katy Perry|California Gurls
+Katy Perry|Roar
+Katy Perry|Teenage Dream
+Katy Perry|Dark Horse
+Lady Gaga|Poker Face
+Lady Gaga|Just Dance
+Lady Gaga|Bad Romance
+Lady Gaga|Paparazzi
+Black Eyed Peas|I Gotta Feeling
+Black Eyed Peas|Where Is the Love?
+Black Eyed Peas|Boom Boom Pow
+Black Eyed Peas|Don't Phunk with My Heart
+Justin Timberlake|SexyBack
+Justin Timberlake|Cry Me a River
+Justin Timberlake|Can't Stop the Feeling!
+Usher|Yeah!
+Usher|OMG
+P!nk|Just Give Me a Reason
+P!nk|So What
+P!nk|Get the Party Started
+Kesha|TiK ToK
+Kesha|Die Young
+Avril Lavigne|Complicated
+Avril Lavigne|Sk8er Boi
+Avril Lavigne|Girlfriend
+Miley Cyrus|Party in the U.S.A.
+Miley Cyrus|Wrecking Ball
+Taylor Swift|Love Story
+Taylor Swift|You Belong with Me
+Taylor Swift|Shake It Off
+Taylor Swift|Blank Space
+Jonas Brothers|Burnin' Up
+Jonas Brothers|Sucker
+Selena Gomez|Come & Get It
+Selena Gomez|Love You Like a Love Song
+Bruno Mars|Just the Way You Are
+Bruno Mars|Grenade
+Bruno Mars|Locked Out of Heaven
+Bruno Mars|The Lazy Song
+Maroon 5|Moves Like Jagger
+Maroon 5|Sugar
+Maroon 5|This Love
+Maroon 5|Payphone
+OneRepublic|Counting Stars
+OneRepublic|Apologize
+Adele|Rolling in the Deep
+Adele|Someone Like You
+Adele|Hello
+Adele|Set Fire to the Rain
+Ed Sheeran|Shape of You
+Ed Sheeran|Perfect
+Ed Sheeran|Thinking Out Loud
+Ed Sheeran|The A Team
+Sia|Chandelier
+Sia|Cheap Thrills
+Shawn Mendes|Stitches
+Shawn Mendes|Treat You Better
+Justin Bieber|Baby
+Justin Bieber|Sorry
+Justin Bieber|Love Yourself
+Eminem|Lose Yourself
+Eminem|Without Me
+Eminem|Love the Way You Lie
+Nelly Furtado|Promiscuous
+Nelly Furtado|Maneater
+Amy Winehouse|Rehab
+Amy Winehouse|Back to Black
+Gnarls Barkley|Crazy
+Flo Rida|Low
+Flo Rida|Right Round
+LMFAO|Party Rock Anthem
+LMFAO|Sexy and I Know It
+Jason Derulo|Whatcha Say
+Jason Derulo|Talk Dirty
+Carly Rae Jepsen|Call Me Maybe
+Gotye|Somebody That I Used to Know
+PSY|Gangnam Style
+Owl City|Fireflies
+One Direction|What Makes You Beautiful
+One Direction|Story of My Life
+Lorde|Royals
+Ellie Goulding|Lights
+Fergie|London Bridge
+Fergie|Fergalicious
+Christina Aguilera|Genie in a Bottle
+Christina Aguilera|Beautiful
+Nicki Minaj|Super Bass
+Nicki Minaj|Starships
+Calvin Harris|Summer
 `);
 
   add('pop-actual', '🎧', 'Pop actual', `
+The Weeknd|Blinding Lights
+The Weeknd|Starboy
+The Weeknd|Save Your Tears
+Dua Lipa|Levitating
+Dua Lipa|Don't Start Now
+Dua Lipa|New Rules
+Billie Eilish|bad guy
+Billie Eilish|ocean eyes
+Billie Eilish|lovely
+Billie Eilish|What Was I Made For?
+Ariana Grande|7 rings
+Ariana Grande|thank u, next
+Ariana Grande|Into You
+Ariana Grande|no tears left to cry
+Harry Styles|As It Was
+Harry Styles|Watermelon Sugar
+Harry Styles|Adore You
+Olivia Rodrigo|drivers license
+Olivia Rodrigo|good 4 u
+Olivia Rodrigo|vampire
+Post Malone|Circles
+Post Malone|Sunflower
+Post Malone|rockstar
+Doja Cat|Say So
+Doja Cat|Woman
+Doja Cat|Kiss Me More
+Sabrina Carpenter|Espresso
+Sabrina Carpenter|Please Please Please
+Miley Cyrus|Flowers
+Lizzo|Good as Hell
+Imagine Dragons|Believer
+Imagine Dragons|Thunder
+Imagine Dragons|Radioactive
+Imagine Dragons|Demons
+Lewis Capaldi|Someone You Loved
+Sam Smith|Stay with Me
+Sam Smith|Unholy
+Taylor Swift|Anti-Hero
+Taylor Swift|Cruel Summer
+Taylor Swift|Lover
+Camila Cabello|Havana
+Camila Cabello|Señorita
+Charlie Puth|See You Again
+Charlie Puth|Attention
+Tones and I|Dance Monkey
+Lil Nas X|Old Town Road
+Lil Nas X|MONTERO (Call Me By Your Name)
+Chappell Roan|Good Luck, Babe!
+Chappell Roan|Pink Pony Club
+Benson Boone|Beautiful Things
+Kendrick Lamar|Not Like Us
+Kendrick Lamar|HUMBLE.
+Travis Scott|SICKO MODE
+Drake|Hotline Bling
+Drake|One Dance
+Drake|God's Plan
+Rema|Calm Down
+Glass Animals|Heat Waves
+Lady Gaga|Die With A Smile
+Rosé|APT.
+Tate McRae|greedy
+Teddy Swims|Lose Control
+Zach Bryan|Something in the Orange
+Morgan Wallen|Last Night
+Ice Spice|Munch (Feelin' U)
+SZA|Kill Bill
+SZA|Snooze
+Miley Cyrus|Used to Be Young
+Joji|Glimpse of Us
+Måneskin|Beggin'
+Gigi Perez|Sailor Song
 `);
 
   add('peques', '🧒', 'Hits de la infancia', `
+Hannah Montana|Nobody's Perfect
+Miley Cyrus|The Climb
+Camp Rock Cast|We Rock
+Demi Lovato|Get Back
+RBD|Rebelde
+RBD|Tras de Mí
+RBD|Solo Quédate en Silencio
+RBD|Nuestro Amor
+RBD|Celestial
+RBD|Un Poco de Tu Amor
+Las Ketchup|Aserejé
+O-Zone|Dragostea Din Tei
+Eiffel 65|Blue (Da Ba Dee)
+Aqua|Barbie Girl
+Crazy Frog|Axel F
+Shaggy|It Wasn't Me
 Daddy Yankee|Gasolina
+Pitbull|Culo
+Jonas Brothers|Year 3000
+Aly & AJ|Potential Breakup Song
+The Cheetah Girls|Cheetah Sisters
+Cheetah Girls|Strut
+Vanessa Hudgens|Say OK
+Hilary Duff|Come Clean
+Hilary Duff|So Yesterday
 Tan Biónica|Ciudad Mágica
 `);
 
   add('cine', '🎬', 'Cine, series y Disney', `
+Lady Gaga|Shallow
+Adele|Skyfall
+Billie Eilish|No Time to Die
+Dua Lipa|Dance The Night
 Aerosmith|I Don't Want to Miss a Thing
 Shakira|Try Everything
+Sia|Never Give Up
+Justin Timberlake|Can't Stop the Feeling!
+Ariana Grande|Beauty and the Beast
+Eminem|Lose Yourself
 Queen|Bohemian Rhapsody
 `);
 
@@ -448,6 +692,10 @@ Shakira|Waka Waka (This Time for Africa)
 Ricky Martin|La Copa de la Vida
 Queen|We Are the Champions
 Queen|We Will Rock You
+Pitbull|We Are One (Ole Ola)
+Nicky Jam|Live It Up
+Ozuna|Arhbo
+Nicki Minaj|Tukoh Taka
 Rodrigo|La Mano de Dios
 Los Fabulosos Cadillacs|Vasos Vacíos
 Los Piojos|Maradó
@@ -461,6 +709,11 @@ Enrique Iglesias|Bailando
 `);
 
   add('electro', '🎹', 'Electrónica y dance', `
+Calvin Harris|Summer
+Calvin Harris|This Is What You Came For
+Calvin Harris|Feel So Close
+Eiffel 65|Blue (Da Ba Dee)
+Dua Lipa|Levitating
 Bizarrap|Quevedo: Bzrp Music Sessions, Vol. 52
 `);
 

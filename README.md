@@ -5,6 +5,7 @@ Suena un fragmento de un tema, y gana el que más sabe. Sin build ni dependencia
 
 ## Cómo se juega
 - **🔔 Buzzers** (2 o más jugadores): suena un fragmento y cada uno tiene su botón de color. El primero que toca frena la música y responde en voz alta (artista y canción). Quien maneja el celular marca **¡Clavó! (+2)**, **Casi (+1)** o **Falló** (queda bloqueado y sigue el resto).
+- **⚔️ 1 vs 1** (cara a cara): el celular se apoya en la mesa entre los dos. Cada jugador tiene su botón gigante de su lado (la mitad de arriba está girada 180° para el que está enfrente). Si uno toca, el **rival** decide desde su lado si lo dijo bien (✔ +2, ½ +1, ✘ queda bloqueado). No hace falta cargar nombres.
 - **🎯 Por turnos** (1 o más jugadores): a cada uno le toca una canción con 4 opciones. Se puede jugar solo y llevar racha.
 - Se puede **repetir** el fragmento, **alargarlo 5 segundos** y pedir **pistas** (cantidad de palabras, letra inicial del artista, década).
 - Al final de cada canción se ve la tapa del disco, el nombre, el año y links a YouTube / Apple Music.
