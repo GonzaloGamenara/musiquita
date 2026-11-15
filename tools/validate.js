@@ -14,6 +14,8 @@ const cacheFile = path.join(__dirname, '.resolved-cache.json');
 const cache = fs.existsSync(cacheFile) ? JSON.parse(fs.readFileSync(cacheFile, 'utf8')) : {};
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 let calls = 0;
+// si una canción tiene "=> Artista|Título" en data.full.js, se busca esa versión exacta en iTunes
+const tgt = s => s.ta ? { a: s.ta, t: s.tt } : s;
 
 async function fetchJson(u) {
   for (let attempt = 0; attempt < 5; attempt++) {
@@ -38,17 +40,17 @@ function snapshot() {
   console.log('canciones únicas:', songs.size, '· ya resueltas:', Object.keys(cache).length);
   // 1) una búsqueda por artista (hasta 200 temas) resuelve muchas canciones de una
   const byArtist = new Map();
-  songs.forEach((s, k) => { if (!(k in cache)) { if (!byArtist.has(s.a)) byArtist.set(s.a, []); byArtist.get(s.a).push([k, s]); } });
+  songs.forEach((s, k) => { if (!(k in cache)) { const A = tgt(s).a; if (!byArtist.has(A)) byArtist.set(A, []); byArtist.get(A).push([k, s]); } });
   let n = 0;
   for (const [artist, list] of byArtist) {
     n++;
     if (list.length >= 3) {
       const d = await fetchJson(MQ.url(artist, 'AR', 200));
-      list.forEach(([k, s]) => { const r = MQ.best(d.results, s); if (r) cache[k] = MQ.pack(r); });
+      list.forEach(([k, s]) => { const r = MQ.best(d.results, tgt(s)); if (r) cache[k] = MQ.pack(r); });
     }
     for (const [k, s] of list) {
       if (cache[k]) continue;
-      cache[k] = (await MQ.find(s, fetchJson)) || 0;
+      cache[k] = (await MQ.find(tgt(s), fetchJson)) || 0;
     }
     fs.writeFileSync(cacheFile, JSON.stringify(cache));
     if (n % 10 === 0) { snapshot(); console.log(`artistas ${n}/${byArtist.size} · llamadas ${calls}`); }

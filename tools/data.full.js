@@ -8,8 +8,12 @@
     R.push({
       id, emoji, name,
       items: text.trim().split('\n').map(l => l.trim()).filter(Boolean).map(l => {
-        const [a, ...t] = l.split('|');
-        return { a: a.trim(), t: t.join('|').trim() };
+        // "Mostrar Artista|Mostrar Título => Artista en iTunes|Título en iTunes"  (la parte de la derecha es opcional)
+        const [disp, target] = l.split(' => ');
+        const [a, ...t] = disp.split('|');
+        const it = { a: a.trim(), t: t.join('|').trim() };
+        if (target) { const [ta, ...tt] = target.split('|'); it.ta = ta.trim(); it.tt = tt.join('|').trim(); }
+        return it;
       })
     });
 
@@ -1643,6 +1647,113 @@ Shakira|La Tortura
 Maná|Eres Mi Religión
 Sin Bandera|Mientes Tan Bien
 Los Auténticos Decadentes|Es Increíble
+`);
+
+
+  add('intros-es', '📺', 'Openings y temas en español latino', `
+Dragon Ball Z|Cha-La Head-Cha-La (Opening latino) => Ricardo Silva|Cha-La Head Cha-La
+Dragon Ball Z|Ángeles Fuimos (Ending latino) => Ricardo Silva|Ángeles Fuimos
+Dragon Ball Super|Limit Break X Survivor (Opening latino) => Ricardo Silva|Opening 2 Limit Break X Survivor
+Dragon Ball GT|Mi Corazón Encantado (Opening latino) => Ricardo Silva|Mi Corazón Encantado Dbgt
+Dragon Ball GT|Opening latino => Pablo Galán|Dragon Ball GT Opening
+One Piece|El Sake de Binks (Opening latino) => Ricardo Silva|Sake de Binks
+Los Caballeros del Zodiaco|Pegasus Fantasy (Opening latino) => Power Up Orchestra|Pegasus Fantasy (From Saint Seiya / Los Caballeros del Zodíaco - Opening Latino) [Live]
+Los Caballeros del Zodiaco|Pegasus Fantasy (Cover latino) => James Mart|Pegasus Fantasy (From "Los Caballeros Del Zodiaco") [Cover]
+Supercampeones|Moete Hero (Opening latino) => Power Up Orchestra|Supercampeones (Moete Hero Opening Latino) [En Vivo]
+Pokémon|Tengo que ser un maestro Pokémon => Pokémon|Tengo Que Ser Un Maestro Pokémon
+Digimon|Butterfly (Opening latino) => Miree|Butterfly (From "Digimon") [Cover Español Latino]
+Digimon Frontier|Fire! (Opening) => Caminos Cruzados|Fire! (Digimon Frontier Opening)
+Sailor Moon|Luz de Luna (Opening latino) => Salomé Anjarí|Moonlight Densetsu (Luz de Luna Opening Latino from Sailor Moon)
+Naruto|Haruka Kanata (Opening latino) => Kanne Find|Naruto Opening 2 - Haruka Kanata (Español Latino)
+Naruto Shippuden|Silhouette (Opening latino) => Lyrical Legends Music|Silhouette (Español Latino)
+Naruto Shippuden|Blue Bird (Opening latino) => Balutaku Covers|Blue Bird (From "Naruto Shippuden") [Cover Español Latino]
+Naruto Shippuden|Lovers (Opening latino) => Lyrical Legends Music|Lovers (Español Latino)
+Inuyasha|Owarinai Yume (Opening latino) => Salomé Anjarí|Owarinai Yume (Inuyasha Opening 3 Español Latino)
+Inuyasha|Grip! (Opening latino) => Salomé Anjarí|Grip! Inuyasha Opening 4 Español Latino
+Samurai X|Sobakasu (Opening latino) => Lyrical Legends Music|Sobakasu
+Samurai X|Cuando las Lágrimas => Jade|Cuando las Lágrimas (Samurai X) [De Película]
+Beyblade|Let It Rip! (Opening latino) => Neversoft|Let It Rip! (Beyblade Opening Latino)
+Beyblade|Let's Beyblade! (Opening latino) => Inheres|Let's Beyblade! (Opening Latino)
+Candy Candy|Tema de apertura => CoverVerse Latino|Candy Candy (Tema de Apertura)
+Sakura Card Captors|Yo Te Atrapo, Tú Me Atrapas (Opening latino) => Adrián Barba|Yo Te Atrapo, Tú Me Atrapas
+Sakura Card Captors|Groovy (Ending latino) => Salomé Anjarí|Groovy (Sakura Card Captor Ending Español Latino)
+Hunter x Hunter|Ohayou (Opening latino) => Adrián Barba|Ohayou (From "Hunter X Hunter") [Cover Latino]
+Shaman King|Over Soul (Opening latino) => Salomé Anjarí|Over Soul (Shaman King Opening Español Latino)
+Mazinger Z|Opening latino => Power Up Orchestra|Opening (From "Mazinger Z") [Live]
+Los Padrinos Mágicos|Mientras Vueles Conmigo => The Camera is On|Mientras Vueles Conmigo (Los Padrinos Mágicos)
+Las Chicas Superpoderosas|Tema final => The Camera is On & Tami Rosales|Las Chicas Superpoderosas (Outro)
+Bob Esponja|Canción inicial => Grupo Infantil Guarderia Pon|Bob Esponja (Canción Inicial de la Serie de Dibujos Animados)
+Los Pitufos|Somos los Pitufos => Grupo Infantil Guarderia Pon|Somos los Pitufos (De "Los Pitufos de la Tele")
+La Abeja Maya|En un país multicolor => Grupo Infantil Guarderia Pon|En un País Multicolor (De "La Abeja Maya")
+Los Picapiedra|Tema (Los Pequeños Picapiedra) => Grupo Infantil Guarderia Pon|The Flintstone Kids (From "Los Pequeños Pica Piedra")
+Patito Feo|Las Divinas => Zokai|Las Divinas (From "Patito Feo")
+Violetta|En mi mundo (en vivo) => Martina Stoessel|En Mi Mundo (Live)
+Frozen|Libre soy => Carmen Sarahi|Libre Soy
+Frozen|Libre soy (versión Violetta) => Martina Stoessel|Libre Soy (Single Version)
+El Rey León|Hakuna Matata => Claudia Pizá|Hakuna Matata
+El Rey León|El ciclo sin fin => Tata Vega|Ciclo Sin Fin
+Aladdín|Un mundo ideal => ZAYN & Becky G|Un Mundo Ideal (Versión Créditos)
+La Sirenita|Bajo el mar => Michael Cruz|Bajo el mar
+Pocahontas|Colores en el viento => Susana Zavaleta|Colores en el Viento
+Mulán|Reflejo => ANALY|Reflejo
+Toy Story|Yo soy tu amigo fiel => Héctor Ortiz|Yo Soy Tu Amigo Fiel
+Toy Story|Yo soy tu amigo fiel (Tatiana) => Tatiana|Yo Soy Tu Amigo Fiel
+Coco|Recuérdame => Carlos Rivera|Recuérdame
+Coco|Un poco loco => Luis Ángel Gómez Jaramillo|Un Poco Loco
+Encanto|No se habla de Bruno => Carolina Gaitán|No se habla de Bruno
+Encanto|La familia Madrigal => Olga Lucía Vives|La familia Madrigal
+Encanto|Dos Oruguitas => Sebastián Yatra|Dos Oruguitas
+El Libro de la Selva|Busca lo más vital => Grupo Musical Ginesitos|Busca Lo Mas Vital (De "El Libro de la Selva")
+Mary Poppins|Supercalifragilisticoespialidoso => CantaJuego|Supercalifragilisticoespialidoso
+`);
+
+  add('intros-en', '🎬', 'Intros de series y películas', `
+Los Simpson|Tema principal => The Simpsons|"The Simpsons" Main Title Theme
+Padre de Familia|Tema principal => Family Guy|Main Title (From "Family Guy")
+Rick y Morty|Tema principal => Rick and Morty & Ryan Elder|Rick and Morty Theme
+Yu-Gi-Oh!|Tema principal => Yu-Gi-Oh!|Yu - Gi - Oh! Theme
+Power Rangers|Go Go Power Rangers => Power Rangers & Ron Wasserman|Go Go Power Rangers Theme
+Los Jóvenes Titanes|Tema principal => PUFFY|TEEN TITANS THEME
+Phineas y Ferb|Hoy va a ser un gran día => Bowling for Soup|Today Is Gonna Be a Great Day (Theme Song to Phineas and Ferb)
+Kim Possible|Call Me, Beep Me! => Christina Milian|Call Me, Beep Me! (The Kim Possible Song)
+Los Magos de Waverly Place|Tema principal => Selena Gomez|Everything Is Not As It Seems (Series Theme Song)
+iCarly|Leave It All to Me => Miranda Cosgrove|Leave It All to Me (Theme from ICarly)
+Drake y Josh|Found a Way => Drake Bell|Found a Way
+Lizzie McGuire|Why Not => Hilary Duff|Why Not
+High School Musical|Start of Something New => Troy & Gabriella|Start of Something New
+Las Tortugas Ninja|Tema (1987) => Teenage Mutant Ninja Turtles|Teenage Mutant Ninja Turtles Cartoon Opening Theme (1987)
+Transformers|Tema principal => Lion|The Transformers Theme
+La Pantera Rosa|Tema principal => Henry Mancini|Pink Panther Theme
+Batman|Tema (serie de 1966) => Neal Hefti|Batman Theme
+Patoaventuras|Tema principal => The Disney Afternoon Studio Chorus|Duck Tales Theme
+Friends|I'll Be There for You => The Rembrandts|I'll Be There for You (Theme from Friends)
+Game of Thrones|Main Title => Ramin Djawadi|Main Title
+La Casa de Papel|Bella Ciao => Manu Pilas|Bella Ciao (Música Original de la Serie La Casa de Papel / Money Heist)
+La Casa de Papel|My Life Is Going On => Cecilia Krull|My Life Is Going On (Música Original de la Serie de TV "La Casa de Papel")
+Narcos|Tuyo => Rodrigo Amarante|Tuyo (Narcos Theme)
+Breaking Bad|Tema principal => Dave Porter|Breaking Bad - Main Title Theme (Extended)
+Dr. House|Teardrop => Massive Attack|Teardrop
+Peaky Blinders|Red Right Hand => Nick Cave & The Bad Seeds|Red Right Hand
+El Juego del Calamar|Pink Soldiers => Kim Sungsoo|Pink Soldiers
+Stranger Things|Tema principal => London Music Works|Stranger Things Theme
+Star Wars|Título principal => John Williams|Main Title
+Jurassic Park|Tema principal => John Williams|Theme from Jurassic Park
+Indiana Jones|Raiders March => John Williams|Raiders March
+Misión Imposible|Tema principal => Michael Giacchino|Mission: Impossible Theme
+James Bond|Tema principal => John Barry|The James Bond Theme
+Top Gun|Top Gun Anthem => Harold Faltermeyer|Top Gun Anthem
+Rocky|Gonna Fly Now => Bill Conti|Gonna Fly Now (Theme From "Rocky")
+Superman|Tema principal => John Williams|Superman - Main Theme (From “Superman: The Movie”)
+El Padrino|Tema de amor => Nino Rota|Love Theme from "The Godfather"
+El Señor de los Anillos|Concerning Hobbits => Howard Shore|Concerning Hobbits
+Harry Potter|Hedwig's Theme => John Williams|Hedwig's Theme
+Piratas del Caribe|He's a Pirate => Klaus Badelt|He's a Pirate
+Evita|No llores por mí, Argentina => Madonna|Don't Cry for Me Argentina
+Cars|Life Is a Highway => Rascal Flatts|Life Is a Highway
+Madagascar|I Like to Move It => Madagascar 5|I Like To Move It
+Shrek|All Star => Smash Mouth|All Star
+Mi Pobre Angelito|Somewhere in My Memory => John Williams|Somewhere in My Memory (Chorus & Orchestra Version)
+Volver al Futuro|Tema principal => The Outatime Orchestra|Back To the Future
 `);
 
   window.MUSIQUITA_CATS = R;

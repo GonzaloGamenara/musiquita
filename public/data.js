@@ -1437,5 +1437,111 @@ Maná|Eres Mi Religión
 Sin Bandera|Mientes Tan Bien
 `);
 
+  add("intros-es", "📺", "Openings y temas en español latino", `
+Dragon Ball Z|Cha-La Head-Cha-La (Opening latino)
+Dragon Ball Z|Ángeles Fuimos (Ending latino)
+Dragon Ball Super|Limit Break X Survivor (Opening latino)
+Dragon Ball GT|Mi Corazón Encantado (Opening latino)
+Dragon Ball GT|Opening latino
+One Piece|El Sake de Binks (Opening latino)
+Los Caballeros del Zodiaco|Pegasus Fantasy (Opening latino)
+Los Caballeros del Zodiaco|Pegasus Fantasy (Cover latino)
+Supercampeones|Moete Hero (Opening latino)
+Pokémon|Tengo que ser un maestro Pokémon
+Digimon|Butterfly (Opening latino)
+Digimon Frontier|Fire! (Opening)
+Sailor Moon|Luz de Luna (Opening latino)
+Naruto|Haruka Kanata (Opening latino)
+Naruto Shippuden|Silhouette (Opening latino)
+Naruto Shippuden|Blue Bird (Opening latino)
+Naruto Shippuden|Lovers (Opening latino)
+Inuyasha|Owarinai Yume (Opening latino)
+Inuyasha|Grip! (Opening latino)
+Samurai X|Sobakasu (Opening latino)
+Samurai X|Cuando las Lágrimas
+Beyblade|Let It Rip! (Opening latino)
+Beyblade|Let's Beyblade! (Opening latino)
+Candy Candy|Tema de apertura
+Sakura Card Captors|Yo Te Atrapo, Tú Me Atrapas (Opening latino)
+Sakura Card Captors|Groovy (Ending latino)
+Hunter x Hunter|Ohayou (Opening latino)
+Shaman King|Over Soul (Opening latino)
+Mazinger Z|Opening latino
+Los Padrinos Mágicos|Mientras Vueles Conmigo
+Las Chicas Superpoderosas|Tema final
+Bob Esponja|Canción inicial
+Los Pitufos|Somos los Pitufos
+La Abeja Maya|En un país multicolor
+Los Picapiedra|Tema (Los Pequeños Picapiedra)
+Patito Feo|Las Divinas
+Violetta|En mi mundo (en vivo)
+Frozen|Libre soy
+Frozen|Libre soy (versión Violetta)
+El Rey León|Hakuna Matata
+El Rey León|El ciclo sin fin
+Aladdín|Un mundo ideal
+La Sirenita|Bajo el mar
+Pocahontas|Colores en el viento
+Mulán|Reflejo
+Toy Story|Yo soy tu amigo fiel
+Toy Story|Yo soy tu amigo fiel (Tatiana)
+Coco|Recuérdame
+Coco|Un poco loco
+Encanto|No se habla de Bruno
+Encanto|La familia Madrigal
+Encanto|Dos Oruguitas
+El Libro de la Selva|Busca lo más vital
+Mary Poppins|Supercalifragilisticoespialidoso
+`);
+
+  add("intros-en", "🎬", "Intros de series y películas", `
+Los Simpson|Tema principal
+Padre de Familia|Tema principal
+Rick y Morty|Tema principal
+Yu-Gi-Oh!|Tema principal
+Power Rangers|Go Go Power Rangers
+Los Jóvenes Titanes|Tema principal
+Phineas y Ferb|Hoy va a ser un gran día
+Kim Possible|Call Me, Beep Me!
+Los Magos de Waverly Place|Tema principal
+iCarly|Leave It All to Me
+Drake y Josh|Found a Way
+Lizzie McGuire|Why Not
+High School Musical|Start of Something New
+Las Tortugas Ninja|Tema (1987)
+Transformers|Tema principal
+La Pantera Rosa|Tema principal
+Batman|Tema (serie de 1966)
+Patoaventuras|Tema principal
+Friends|I'll Be There for You
+Game of Thrones|Main Title
+La Casa de Papel|Bella Ciao
+La Casa de Papel|My Life Is Going On
+Narcos|Tuyo
+Breaking Bad|Tema principal
+Dr. House|Teardrop
+Peaky Blinders|Red Right Hand
+El Juego del Calamar|Pink Soldiers
+Stranger Things|Tema principal
+Star Wars|Título principal
+Jurassic Park|Tema principal
+Indiana Jones|Raiders March
+Misión Imposible|Tema principal
+James Bond|Tema principal
+Top Gun|Top Gun Anthem
+Rocky|Gonna Fly Now
+Superman|Tema principal
+El Padrino|Tema de amor
+El Señor de los Anillos|Concerning Hobbits
+Harry Potter|Hedwig's Theme
+Piratas del Caribe|He's a Pirate
+Evita|No llores por mí, Argentina
+Cars|Life Is a Highway
+Madagascar|I Like to Move It
+Shrek|All Star
+Mi Pobre Angelito|Somewhere in My Memory
+Volver al Futuro|Tema principal
+`);
+
   window.MUSIQUITA_CATS = R;
 })();
