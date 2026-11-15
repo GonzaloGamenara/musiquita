@@ -11,7 +11,7 @@ Suena un fragmento de un tema, y gana el que más sabe. Sin build ni dependencia
 - Al final de cada canción se ve la tapa del disco, el nombre, el año y links a YouTube / Apple Music.
 
 ## Catálogo
-Más de 800 canciones (y creciendo) en 16 géneros (rock nacional, cumbia y cuarteto, trap argentino, pop argentino, reggaetón y latino, pop 2000s y actual, hits de la infancia, cine y Disney, 80s/90s, folklore y tango, mundial y cancha, electrónica…).
+Más de 1300 canciones en 28 géneros (rock nacional, cumbia y cuarteto, trap argentino, pop argentino, reggaetón y latino, pop 2000s y actual, hits de la infancia, cine y Disney, hip hop, baladas, salsa, indie, metal, K-pop, openings de anime, Navidad, clásicos 60-70, reggae, folklore y tango, mundial y cancha, electrónica…).
 Desde la app se pueden activar/desactivar géneros, sacar temas puntuales y crear **playlists propias** (`Artista|Canción`, una por línea).
 
 ## De dónde sale la música
