@@ -1,7 +1,6 @@
-/* Catálogo de Musiquita.
-   Una canción por línea:  Artista|Canción
-   (los nombres tienen que parecerse a como figuran en Apple Music / iTunes para que la app encuentre el audio).
-   Para sumar o sacar temas editá este archivo, o creá categorías propias desde la app. */
+/* Catálogo de Musiquita (GENERADO por tools/build.js — no editar a mano).
+   Para agregar canciones: editá tools/data.full.js, corré tools/validate.js y después tools/build.js.
+   Una canción por línea:  Artista|Canción  */
 (function () {
   const R = [];
   const add = (id, emoji, name, text) =>
@@ -13,7 +12,7 @@
       })
     });
 
-  add('rock-clasico', '🎸', 'Rock nacional clásico', `
+  add("rock-clasico", "🎸", "Rock nacional clásico", `
 Soda Stereo|De Música Ligera
 Soda Stereo|Persiana Americana
 Soda Stereo|Cuando Pase el Temblor
@@ -73,7 +72,7 @@ Los Pericos|Runaway
 Los Pericos|Sin Cadenas
 `);
 
-  add('rock-90', '🤘', 'Rock nacional de los 90 y 2000', `
+  add("rock-90", "🤘", "Rock nacional de los 90 y 2000", `
 Los Piojos|Verano del 92
 Los Piojos|Ay Ay Ay
 Los Piojos|Maradó
@@ -132,7 +131,7 @@ Attaque 77|Hacelo por Mí
 Pedro Aznar|Quebrado
 `);
 
-  add('rock-es', '🌮', 'Rock y pop en español', `
+  add("rock-es", "🌮", "Rock y pop en español", `
 Maná|Rayando el Sol
 Maná|Corazón Espinado
 Maná|Clavado en un Bar
@@ -201,7 +200,7 @@ Shakira|La Tortura
 Shakira|Inevitable
 `);
 
-  add('rock-int', '🎸', 'Rock internacional', `
+  add("rock-int", "🎸", "Rock internacional", `
 Queen|Bohemian Rhapsody
 Queen|We Will Rock You
 Queen|Don't Stop Me Now
@@ -304,7 +303,7 @@ Coldplay|Paradise
 Coldplay|A Sky Full of Stars
 `);
 
-  add('cumbia', '💃', 'Cumbia y cuarteto', `
+  add("cumbia", "💃", "Cumbia y cuarteto", `
 Rodrigo|La Mano de Dios
 Rodrigo|Lo Mejor del Amor
 Rodrigo|Ocho Cuarenta
@@ -324,7 +323,7 @@ Ráfaga|Mentirosa
 Damas Gratis|Se Te Ve la Tanga
 `);
 
-  add('pop-ar', '🎤', 'Pop argentino', `
+  add("pop-ar", "🎤", "Pop argentino", `
 Tini|Miénteme
 Tini|Maldita Foto
 Tini|Oye
@@ -372,7 +371,7 @@ Leonardo Favio|Ella Ya Me Olvidó
 Nathy Peluso|Buenos Aires
 `);
 
-  add('urbano-ar', '🧢', 'Trap y música urbana argentina', `
+  add("urbano-ar", "🧢", "Trap y música urbana argentina", `
 Duki|She Don't Give a FO
 Duki|Goteo
 Bizarrap|Quevedo: Bzrp Music Sessions, Vol. 52
@@ -395,7 +394,7 @@ Tiago PZK|Entre Nosotros
 Los Pericos|Sin Cadenas
 `);
 
-  add('latino', '🔥', 'Reggaetón y latino', `
+  add("latino", "🔥", "Reggaetón y latino", `
 Daddy Yankee|Gasolina
 Daddy Yankee|Dura
 Daddy Yankee|Con Calma
@@ -454,7 +453,7 @@ Plan B|Si No Le Contesto
 Tito El Bambino|El Amor
 `);
 
-  add('pop-2000', '💿', 'Pop internacional 2000s y 2010s', `
+  add("pop-2000", "💿", "Pop internacional 2000s y 2010s", `
 Britney Spears|...Baby One More Time
 Britney Spears|Toxic
 Britney Spears|Oops!... I Did It Again
@@ -560,7 +559,7 @@ Nicki Minaj|Starships
 Calvin Harris|Summer
 `);
 
-  add('pop-actual', '🎧', 'Pop actual', `
+  add("pop-actual", "🎧", "Pop actual", `
 The Weeknd|Blinding Lights
 The Weeknd|Starboy
 The Weeknd|Save Your Tears
@@ -634,7 +633,7 @@ Måneskin|Beggin'
 Gigi Perez|Sailor Song
 `);
 
-  add('peques', '🧒', 'Hits de la infancia', `
+  add("peques", "🧒", "Hits de la infancia", `
 Hannah Montana|Nobody's Perfect
 Miley Cyrus|The Climb
 Camp Rock Cast|We Rock
@@ -673,7 +672,7 @@ Tan Biónica|Ciudad Mágica
 Chiquititas|Chiquititas
 `);
 
-  add('cine', '🎬', 'Cine, series y Disney', `
+  add("cine", "🎬", "Cine, series y Disney", `
 Idina Menzel|Let It Go
 Auliʻi Cravalho|How Far I'll Go
 Randy Newman|You've Got a Friend in Me
@@ -725,7 +724,7 @@ Gloria Gaynor|I Will Survive
 Bee Gees|Stayin' Alive
 `);
 
-  add('retro', '🕺', 'Hits de los 80 y 90', `
+  add("retro", "🕺", "Hits de los 80 y 90", `
 Michael Jackson|Billie Jean
 Michael Jackson|Thriller
 Michael Jackson|Beat It
@@ -795,7 +794,7 @@ Bon Jovi|Livin' on a Prayer
 Guns N' Roses|Sweet Child O' Mine
 `);
 
-  add('folklore', '🪕', 'Folklore y tango', `
+  add("folklore", "🪕", "Folklore y tango", `
 Mercedes Sosa|Gracias a la Vida
 Mercedes Sosa|Solo le Pido a Dios
 Mercedes Sosa|Todo Cambia
@@ -829,7 +828,7 @@ Los Manseros Santiagueños|Chacarera del Rancho
 Divididos|Ala Delta
 `);
 
-  add('mundial', '🏟️', 'Mundial y cancha', `
+  add("mundial", "🏟️", "Mundial y cancha", `
 La Mosca|Muchachos, Ahora Nos Volvimos a Ilusionar
 Shakira|Waka Waka (This Time for Africa)
 K'naan|Wavin' Flag
@@ -858,7 +857,7 @@ Enrique Iglesias|Bailando
 Estopa|Como Camarón
 `);
 
-  add('electro', '🎹', 'Electrónica y dance', `
+  add("electro", "🎹", "Electrónica y dance", `
 Daft Punk|One More Time
 Daft Punk|Get Lucky
 Daft Punk|Harder, Better, Faster, Stronger
@@ -905,57 +904,24 @@ Cascada|Evacuate the Dancefloor
 Safri Duo|Played-A-Live
 Benny Benassi|Satisfaction
 Armin van Buuren|This Is What It Feels Like
-Axwell /\\ Ingrosso|More Than You Know
+Axwell /\ Ingrosso|More Than You Know
 Fisher|Losing It
 Peggy Gou|(It Goes Like) Nanana
 Dua Lipa|Levitating
 Bizarrap|Quevedo: Bzrp Music Sessions, Vol. 52
 `);
 
-
-  add('hiphop', '🎤', 'Hip hop y R&B', `
-`);
-
-  add('baladas', '💔', 'Baladas románticas', `
-`);
-
-  add('salsa', '🌴', 'Salsa, merengue y tropical', `
-Ráfaga|Mentirosa
-Marc Anthony|Vivir Mi Vida
-`);
-
-  add('indie', '🎧', 'Indie y rock alternativo', `
-`);
-
-  add('metal', '🤘', 'Metal y hard rock', `
-Rata Blanca|La Leyenda del Hada y el Mago
-`);
-
-  add('kpop', '🇰🇷', 'K-pop y fenómenos globales', `
-`);
-
-  add('regional', '🪗', 'Cumbia mexicana y regional', `
-`);
-
-  add('anime-op', '🍥', 'Openings de anime y juegos', `
-`);
-
-  add('navidad', '🎄', 'Navidad y fiestas', `
-Wham!|Last Christmas
-`);
-
-  add('clasicos70', '📻', 'Clásicos de los 60 y 70', `
-`);
-
-  add('reggae', '🟢', 'Reggae y ska', `
-Los Pericos|Pupilas Lejanas
-Los Pericos|Runaway
-`);
-
-  add('pop-latino', '🌟', 'Pop latino de los 90 y 2000', `
-Estopa|Como Camarón
-Las Ketchup|Aserejé
-Shakira|La Tortura
+  add("hiphop", "🎤", "Hip hop y R&B", `
+Dr. Dre|Still D.R.E.
+Snoop Dogg|Drop It Like It's Hot
+50 Cent|In da Club
+50 Cent|Candy Shop
+Jay-Z|Empire State of Mind
+Kanye West|Stronger
+Kanye West|Gold Digger
+Kanye West|Heartless
+Lil Wayne|A Milli
+Lil Wayne|Lollipop
 `);
 
   window.MUSIQUITA_CATS = R;
